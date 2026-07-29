@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유흥 용어 정리 — 첫 방문자를 위한 정산 및 사후 확인 가이드</title>
+    <meta name="description" content="유흥 업종별 용어와 룸티, 주대, TC 등 요금 체계를 투명하게 정리합니다. 정산 방식의 사전 합의 이유, 연장 및 조기 종료 처리법, 사후 기록 관리법 등 첫 방문자가 혼선 없이 마무리 단계까지 확인해야 할 필수 실무 정보를 제공합니다.">
+    <meta name="keywords" content="유흥 용어 정리, 룸티, 주대, TC, 셔츠룸 용어, 룸싸롱 주대, 텐프로 쩜오 차이">
+    <link rel="canonical" href="https://ilsang-log.shop/column.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="유흥 용어 정리 — 첫 방문자를 위한 정산 및 사후 확인 가이드">
+    <meta property="og:description" content="업종별 요금 체계와 용어의 명확한 정의. 정산 방식, 연장 계산법, 사후 기록 요령까지 첫 방문자를 위해 상세히 해설합니다.">
+    <meta property="og:url" content="https://ilsang-log.shop/column.html">
+
+    <style>
+        /* CSS RESET & VARIABLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --primary: #111111;
+            --primary-light: #2c2c2c;
+            --accent: #b09a6a;
+            --accent-hover: #9c8556;
+            --bg-main: #fcfcfb;
+            --bg-sub: #f5f4f0;
+            --surface: #ffffff;
+            --text-main: #222222;
+            --text-sub: #555555;
+            --border: #e0ded9;
+            --max-width: 1160px;
+            --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.7;
+            letter-spacing: -0.02em;
+        }
+
+        /* TYPOGRAPHY WHEAT */
+        h1, h2, h3, h4 {
+            color: var(--primary);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.85rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: 1.05rem;
+            color: var(--text-sub);
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* HEADER / MASTHEAD */
+        .r-box-c96l {
+            background-color: var(--primary);
+            color: var(--surface);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--primary-light);
+        }
+        .k-wrap-p7f8-row {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-area {
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--accent);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            background-color: var(--primary);
+            color: var(--surface);
+            padding: 6rem 2rem;
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        .hero-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero-tag {
+            color: var(--accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            display: block;
+            font-weight: 600;
+        }
+        .hero-section p {
+            color: #bbbbbb;
+            font-size: 1.15rem;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* CONTAINER SETUP */
+        .main-container {
+            max-width: var(--max-width);
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        /* COLUMN SECTION */
+        .column-block {
+            margin-bottom: 5rem;
+        }
+
+        /* CLIP GRID CONCEPT */
+        .clip-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .clip-card {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            padding: 2.5rem 2rem;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .clip-card::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            background-color: var(--accent);
+            clip-path: polygon(100% 0, 0 100%, 100% 100%);
+        }
+        .clip-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+        .clip-card-num {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--bg-sub);
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            z-index: 1;
+        }
+        .clip-card-title {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        .clip-card-desc {
+            position: relative;
+            z-index: 2;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-sub);
+        }
+
+        /* LIST ITEM & ACCORDION STYLE */
+        .n-item-p5hr-row {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            padding: 1.8rem;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid var(--accent);
+        }
+        .n-item-p5hr-row h4 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        /* BUTTONS */
+        .n-btn-7n1u {
+            background-color: var(--primary);
+            color: var(--surface);
+            padding: 0.8rem 1.8rem;
+            border: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .n-btn-7n1u:hover {
+            background-color: var(--primary-light);
+        }
+        .v-btn-m1n7 {
+            background-color: transparent;
+            color: var(--accent);
+            padding: 0.8rem 1.8rem;
+            border: 1px solid var(--accent);
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .v-btn-m1n7:hover {
+            background-color: var(--accent);
+            color: var(--surface);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--primary);
+            color: #888888;
+            padding: 4rem 2rem;
+            border-top: 1px solid var(--primary-light);
+            font-size: 0.9rem;
+        }
+        .footer-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .footer-info {
+            max-width: 500px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        .copyright {
+            margin-top: 2rem;
+            border-top: 1px solid var(--primary-light);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            width: 100%;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 992px) {
+            .clip-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .clip-grid {
+                grid-template-columns: 1fr;
+            }
+            .k-wrap-p7f8-row {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .footer-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="r-box-c96l">
+        <div class="k-wrap-p7f8-row">
+            <a href="https://ilsang-log.shop/" class="logo-area">TRANSPARENT GUIDE</a>
+            <nav class="nav-links">
+                <a href="https://ilsang-log.shop/">홈</a>
+                <a href="#terminology">용어 해설</a>
+                <a href="#settlement">정산 체계</a>
+                <a href="#scenarios">상황별 가이드</a>
+                <a href="#checklist">사후 검증</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO MASTHEAD -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <span class="hero-tag">Professional Analysis Column</span>
+            <h1>유흥 업종별 용어와 요금 체계의 투명한 해설</h1>
+            <p>첫 방문자가 겪는 정보 비대칭성을 해소하고, 룸티, 주대, TC 등 복잡한 정산 방식의 표준적 기준을 명확하게 규명합니다.</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+
+        <!-- SECTION 1: TERMINOLOGY DEFINITION -->
+        <section id="terminology" class="column-block">
+            <h2>1. 업종별 핵심 용어 및 개념의 정의</h2>
+            <p>
+                유흥 업종의 소비 구조는 일반적인 음식점이나 서비스업과 달리 세분화된 비용 항목으로 구성되어 있어, 첫 방문자나 경험이 적은 소비자가 요금 청구 방식을 오해하기 쉽습니다. 가장 기초가 되는 핵심 용어인 '주대'는 기본적으로 제공되는 주류와 안주류의 결합 상품 가격을 의미하며, 이는 업소의 등급과 운영 방식에 따라 기준 가격이 상이하게 책정됩니다. 여기에 공간 이용료 개념인 '룸티(Room Tee)'와 접객원의 서비스 제공 대가인 'TC(Table Charge)'가 별도로 추가되는 구조가 일반적입니다. 이러한 기본 구성 요소를 이해하는 것이 불필요한 비용 분쟁을 예방하는 첫걸음입니다.
+            </p>
+            <p>
+                업종 분류에 따른 차이점 역시 명확히 인지해야 합니다. 소위 '텐프로'와 '쩜오'는 묶임 시간, 접객원의 로테이션 방식, 그리고 이에 따른 TC 산정 기준에서 근본적인 차이를 보입니다. 셔츠룸이나 하이퍼블릭 등 대중적인 형태의 업소는 시간 정찰제를 도입하여 주대와 TC를 사전에 패키지 형태로 명시하는 경우가 많지만, 고급 업소일수록 시간당 추가 비용이나 로테이션에 따른 가중치가 복잡하게 적용되므로 사전에 구체적인 요금 명세서를 확인하는 과정이 필수적입니다.
+            </p>
+        </section>
+
+        <!-- SECTION 2: SETTLEMENT METHODS -->
+        <section id="settlement" class="column-block">
+            <h2>2. 요금 체계의 구조와 정산 방식</h2>
+            <p>
+                정산 과정에서 가장 빈번하게 발생하는 분쟁은 사전 합의되지 않은 추가 비용 청구에서 비롯됩니다. 입실 전 담당 매니저나 영업진과 주대, TC, 룸티의 총합을 명확히 확인하고, 추가 주류 주문 시 발생할 비용 증가폭을 서면이나 메시지 기록으로 남겨두는 것이 안전합니다. 특히 정산 방식(카드 결제 시 부가세 및 봉사료 포함 여부, 현금 결제 시 적용되는 할인율 등)을 사전에 확정 짓지 않으면 퇴실 시 예상치 못한 금액 차이로 당황할 수 있습니다.
+            </p>
+            <p>
+                시간 연장(Extension)과 조기 종료(Early Termination)에 따른 정산 룰 역시 명확한 기준이 요구됩니다. 정해진 이용 시간(예: 2시간)을 초과하여 이용할 경우, 연장 단위가 30분인지 1시간인지에 따라 TC가 일할 계산되거나 전액 청구될 수 있습니다. 반대로 개인 사정으로 인해 예정된 시간보다 조기에 퇴실하더라도 기본 주대와 최소 약정된 TC는 감면되지 않는 경우가 대부분이므로, 이용 시간 계획은 처음부터 보수적으로 잡는 것이 합리적입니다.
+            </p>
+        </section>
+
+        <!-- SECTION 3: CLIP GRID SCENARIOS -->
+        <section id="scenarios" class="column-block">
+            <h2>3. 상황별 실무 가이드 (Clip Grid)</h2>
+            <p>소비자의 방문 인원, 시간대, 목적에 따라 요금 적용 기준이 달라집니다. 아래의 구조화된 시나리오별 대응 수칙을 참고하십시오.</p>
+            
+            <div class="clip-grid">
+                <!-- CARD 1 -->
+                <div class="clip-card">
+                    <div class="clip-card-num">01</div>
+                    <h3 class="clip-card-title">인원별 구성 최적화</h3>
+                    <p class="clip-card-desc">
+                        1인 방문 시에는 기본 주대 독점 부담으로 인당 평균 비용이 매우 높게 책정되므로 정찰제 업소가 유리합니다. 반면 3인 이상의 단체 방문 시에는 주대를 공동 분담하되 개별 TC의 합산액이 증가하므로, 총액 기준의 사전 견적을 필히 확인해야 예산 범위를 초과하지 않습니다.
+                    </p>
+                </div>
+                <!-- CARD 2 -->
+                <div class="clip-card">
+                    <div class="clip-card-num">02</div>
+                    <h3 class="clip-card-title">시간대별 정산 가이드</h3>
+                    <p class="clip-card-desc">
+                        오후 8시 이전 조기 입실 시 제공되는 '얼리버드 할인'이나 주대 면제 혜택을 활용하는 것이 경제적입니다. 단, 피크 시간대(오후 10시~오전 1시)에는 접객원 수급 지연으로 불필요한 대기 시간 요금이 청구될 수 있으므로 실시간 입퇴실 기록을 상호 대조해야 합니다.
+                    </p>
+                </div>
+                <!-- CARD 3 -->
+                <div class="clip-card">
+                    <div class="clip-card-num">03</div>
+                    <h3 class="clip-card-title">사후 기록 및 영수증</h3>
+                    <p class="clip-card-desc">
+                        소비가 완료된 이후 카드 전표나 영수증에 표기된 세부 내역(부가세, 봉사료, 실제 음용 주류 수량, TC 시간 계산 등)이 최초 구두 합의안과 일치하는지 대조하십시오. 현장을 벗어난 이후에는 입증의 한계로 인해 정정 요구가 수용되기 매우 어렵습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: CHECKLIST -->
+        <section id="checklist" class="column-block">
+            <h2>4. 소비자 권익 보호를 위한 사후 검증 체크리스트</h2>
+            <p>
+                건전하고 투명한 유흥 소비 문화를 정착시키기 위해서는 소비자 스스로가 권리와 의무를 명확히 인식해야 합니다. 구두 계약 역시 법적 효력을 지니지만 입증이 곤란하므로, 방문 전 공식 소통 채널을 통해 공개된 요금표를 캡처해 두거나 담당자와 주고받은 문자 메시지를 보존하는 습관이 유익합니다. 이는 혹여 발생할 수 있는 바가지 요금 청구나 부당 정산 요구에 대응할 수 있는 가장 확실한 객관적 증거가 됩니다.
+            </p>
+            <p>
+                또한, 주류 및 안주의 개봉 상태와 추가 주문 내역을 테이블 위에서 직관적으로 관리하는 것도 불필요한 분쟁을 예방하는 실질적인 방법입니다. 빈 병을 치우기 전에 수량을 상호 확인하거나, 추가 주문 시마다 모바일 메신저 등으로 내역을 기록해 두는 번거로움을 감수하더라도, 최종 정산 시 발생할 수 있는 불필요한 감정 소모와 금전적 손실을 완벽히 예방하는 현명한 소비자의 자세가 요구됩니다.
+            </p>
+
+            <!-- FAQ ACCORDION -->
+            <div style="margin-top: 3rem;">
+                <h3 style="margin-bottom: 1.5rem;">자주 묻는 핵심 질문 (FAQ)</h3>
+                
+                <div class="n-item-p5hr-row">
+                    <h4>Q1. 카드 결제 시 부가세 외에 추가 수수료가 붙는 것이 정당한가요?</h4>
+                    <p style="margin: 0; font-size: 0.95rem;">
+                        대한민국 여신전문금융업법에 따르면 카드 결제를 이유로 수수료를 소비자에게 전가하는 것은 위법입니다. 다만, 유흥주점의 경우 개별소비세 대상 업소인 경우가 많아 세법상 부가세 외의 세금이 추가 청구될 수 있으므로, 해당 항목이 합법적 세금인지 단순 수수료 전가인지 명세서를 통해 구별해야 합니다.
+                    </p>
+                </div>
+
+                <div class="n-item-p5hr-row">
+                    <h4>Q2. 접객원 로테이션 방식에서 TC는 어떻게 계산되나요?</h4>
+                    <p style="margin: 0; font-size: 0.95rem;">
+                        로테이션 형태의 업소(예: 쩜오 등)는 한 명의 접객원이 여러 테이블을 순환하므로, 실제 머무른 시간 대비 요금이 책정되거나 사전 약정된 '묶임 시간' 단위로 TC가 청구됩니다. 입실 전에 시간당 단가와 묶임 기준(예: 1시간당 1타임 등)을 매니저에게 확답받는 것이 필수적입니다.
+                    </p>
+                </div>
+
+                <div class="n-item-p5hr-row">
+                    <h4>Q3. 조기 퇴실 시 남은 시간에 대한 TC 환불이 가능한가요?</h4>
+                    <p style="margin: 0; font-size: 0.95rem;">
+                        원칙적으로 소비자의 단순 변심으로 인한 조기 퇴실 시, 이미 약정된 최소 이용 시간 분량의 TC는 환불되지 않는 것이 업계 관행입니다. 단, 업소 측의 과실(접객원 미배치, 약정 서비스 미이행 등)로 인한 중단일 경우 미사용 시간에 대한 정밀 정산을 요구할 권리가 있습니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTA AREA -->
+            <div style="text-align: center; margin-top: 4rem; padding: 3rem; background-color: var(--bg-sub); border: 1px solid var(--border);">
+                <h3 style="margin-bottom: 1rem;">올바른 정보로 투명한 소비를 시작하십시오</h3>
+                <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 0.95rem;">
+                    불투명한 유흥 시장 내에서 정보 비대칭성은 소비자의 직접적인 금전적 손실로 이어집니다. 업종별 정확한 가이드를 숙지하여 권익을 보호하십시오.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 1rem;">
+                    <a href="https://ilsang-log.shop/" class="n-btn-7n1u">홈으로 이동</a>
+                    <a href="#terminology" class="v-btn-m1n7">용어 다시보기</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4 style="color: var(--accent); margin-bottom: 1rem;">TRANSPARENT GUIDE</h4>
+                <p style="font-size: 0.85rem; color: #888888; line-height: 1.6;">
+                    본 정보 웹사이트는 유흥 업계의 불필요한 분쟁을 줄이고 건전하며 합리적인 소비 문화를 촉진하기 위해 객관적이고 표준적인 업종별 요금 체계 정보를 제공합니다. 제공된 가이드는 일반적인 시장 관행을 기준으로 하며, 개별 업소의 실제 약관과 상이할 수 있으므로 최종 계약 전 확인이 요구됩니다.
+                </p>
+            </div>
+            <div>
+                <h4 style="color: #cccccc; margin-bottom: 1rem; font-size: 1rem;">주요 서비스</h4>
+                <div class="footer-links" style="flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+                    <a href="#terminology">업종별 용어 사전</a>
+                    <a href="#settlement">정산 방식 분석</a>
+                    <a href="#scenarios">상황별 대응 요령</a>
+                    <a href="#checklist">영수증 검증 리스트</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Transparent Guide. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

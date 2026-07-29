@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유흥 용어 정리 — 첫 방문자를 위한 정산 및 사후 확인 가이드</title>
+    <meta name="description" content="유흥 업종별 용어와 룸티, 주대, TC 등 요금 체계를 투명하게 정리합니다. 정산 방식의 사전 합의 이유, 연장 및 조기 종료 처리법, 사후 기록 관리법 등 첫 방문자가 혼선 없이 마무리 단계까지 확인해야 할 필수 실무 정보를 제공합니다.">
+    <meta name="keywords" content="유흥 용어 정리, 룸티, 주대, TC, 셔츠룸 용어, 룸싸롱 주대, 텐프로 쩜오 차이">
+    <link rel="canonical" href="https://ilsang-log.shop/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="유흥 용어 정리 — 첫 방문자를 위한 정산 및 사후 확인 가이드">
+    <meta property="og:description" content="업종별 요금 체계와 용어의 명확한 정의. 정산 방식, 연장 계산법, 사후 기록 요령까지 첫 방문자를 위해 상세히 해설합니다.">
+    <meta property="og:url" content="https://ilsang-log.shop/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="유흥 용어 정리 — 첫 방문자를 위한 정산 및 사후 확인 가이드">
+    <meta name="twitter:description" content="업종별 요금 체계와 용어의 명확한 정의. 정산 방식, 연장 계산법, 사후 기록 요령까지 첫 방문자를 위해 상세히 해설합니다.">
+
+    <!-- Design System Meta Tags -->
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-clip-paper">
+    <meta name="generator" content="custom-cms-9a21">
+
+    <style>
+        /* CSS RESET & VARIABLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --primary: #1b1a17;
+            --secondary: #f4f1ea;
+            --accent: #b4451f;
+            --card-bg: #eae5d8;
+            --font-sans: ui-sans-serif, Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        }
+
+        body {
+            background-color: var(--secondary);
+            color: var(--primary);
+            font-family: var(--font-sans);
+            line-height: 1.7;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* TYPOGRAPHY WHEAT */
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+        }
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 1.8rem; border-bottom: 1px solid var(--primary); padding-bottom: 1rem; margin-bottom: 2rem; }
+        h3 { font-size: 1.3rem; margin-bottom: 1rem; }
+        p { margin-bottom: 1.5rem; text-align: justify; }
+        code, .mono { font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent); }
+
+        /* HEADER / MASTHEAD */
+        .r-box-c96l {
+            border-bottom: 1px solid var(--primary);
+            padding: 40px 72px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background-color: var(--secondary);
+        }
+        .k-wrap-p7f8-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .n-btn-7n1u {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--primary);
+            letter-spacing: -0.05em;
+        }
+        .v-btn-m1n7 {
+            font-size: 1rem;
+            color: var(--primary);
+            max-width: 600px;
+            font-weight: 500;
+        }
+        .n-item-p5hr-row {
+            display: flex;
+            gap: 24px;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--primary);
+            padding-top: 16px;
+        }
+
+        /* NAVIGATION */
+        .r-ico-umcf {
+            display: flex;
+            gap: 32px;
+        }
+        .r-ico-umcf a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            position: relative;
+        }
+        .r-ico-umcf a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent);
+            transform: scaleX(0);
+            transition: transform 0.2s ease;
+        }
+        .r-ico-umcf a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* SECTIONS GENERAL */
+        section {
+            padding: 120px 72px;
+            border-bottom: 1px solid var(--primary);
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 24px;
+            }
+            .r-box-c96l {
+                padding: 30px 24px;
+            }
+        }
+
+        /* HERO SECTION (ASYNCHRONOUS BOLD TYPOGRAPHY) */
+        .m-card-nkfd-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 48px;
+            align-items: start;
+        }
+        @media (max-width: 992px) {
+            .m-card-nkfd-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .m-card-nkfd-tagline {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.04em;
+            color: var(--primary);
+            margin-bottom: 2rem;
+        }
+        .m-card-nkfd-tagline span {
+            color: var(--accent);
+        }
+        .m-card-nkfd-lead {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        /* GRID SYSTEM (CLIP GRID + INTENTIONAL ROTATION) */
+        .k-grid-vk7x-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+            gap: 1px;
+            background-color: var(--primary);
+            border: 1px solid var(--primary);
+            margin-top: 40px;
+        }
+        .m-list-t07o {
+            background-color: var(--secondary);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 320px;
+            transition: background-color 0.2s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.015);
+            border-radius: 0px;
+        }
+        .m-list-t07o:hover {
+            background-color: var(--card-bg);
+        }
+        /* Misalignment simulation for Retro Neo-Brut */
+        .q-head-6g84-left {
+            transform: rotate(-0.5deg);
+        }
+        .q-head-6g84-right {
+            transform: rotate(0.5deg);
+        }
+        /* Every 5th card is a pullquote */
+        .m-list-t07o-pullquote {
+            background-color: var(--accent) !important;
+            color: var(--secondary) !important;
+        }
+        .m-list-t07o-pullquote h3,
+        .m-list-t07o-pullquote p,
+        .m-list-t07o-pullquote .mono {
+            color: var(--secondary) !important;
+        }
+
+        /* NARRATIVE SECTION (1-COLUMN DEEP TEXT) */
+        .v-item-bxhl-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .r-txt-jopc-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--accent);
+            padding: 32px;
+            margin: 40px 0;
+        }
+        .r-txt-jopc-box p {
+            margin-bottom: 0;
+            font-style: italic;
+        }
+
+        /* ASYMMETRIC 2-COLUMN BLOCK (For selection criteria) */
+        .x-btn-mlga-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+        @media (max-width: 768px) {
+            .x-btn-mlga-col {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* FAQ ACCORDION-STYLE LIST */
+        .q-btn-zweh-item {
+            border: 1px solid var(--primary);
+            margin-bottom: 16px;
+            background-color: var(--secondary);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.015);
+            border-radius: 0px;
+        }
+        .q-btn-zweh-trigger {
+            padding: 24px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--primary);
+        }
+        .q-btn-zweh-content {
+            padding: 24px;
+            display: block;
+        }
+
+        /* FLOATING DOT NAVIGATION */
+        .t-grid-uib6 {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 1000;
+            background: rgba(244, 241, 234, 0.9);
+            padding: 12px 8px;
+            border: 1px solid var(--primary);
+        }
+        .n-txt-hams {
+            width: 10px;
+            height: 10px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--primary);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .n-txt-hams.active {
+            background-color: var(--accent);
+        }
+
+        /* HAMBURGER MENU (MOBILE ONLY) */
+        .q-main-8u04 {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        @media (max-width: 768px) {
+            .q-main-8u04 {
+                display: block;
+            }
+            .r-ico-umcf {
+                display: none; /* Simplification for small screen */
+            }
+        }
+
+        /* FOOTER & AUTHOR */
+        .k-btn-v7fq-section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--primary);
+            padding: 40px;
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 24px;
+            align-items: center;
+        }
+        @media (max-width: 576px) {
+            .k-btn-v7fq-section {
+                grid-template-columns: 1fr;
+            }
+        }
+        .k-btn-v7fq-avatar {
+            width: 80px;
+            height: 80px;
+            background-color: var(--accent);
+            border: 1px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            color: var(--secondary);
+            font-family: var(--font-mono);
+        }
+        .x-main-n367 {
+            padding: 40px 72px;
+            background-color: var(--primary);
+            color: var(--secondary);
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .x-main-n367 {
+                padding: 30px 24px;
+            }
+        }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://ilsang-log.shop/#organization",
+          "name": "유흥 용어 정리 사전형 블로그",
+          "url": "https://ilsang-log.shop/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ilsang-log.shop/assets/logo.png",
+            "caption": "유흥 용어 정리"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ilsang-log.shop/#webpage",
+          "url": "https://ilsang-log.shop/",
+          "name": "유흥 용어 정리 — 첫 방문자를 위한 정산 및 사후 확인 가이드",
+          "isPartOf": { "@id": "https://ilsang-log.shop/#organization" },
+          "description": "업종별 요금 체계와 용어의 명확한 정의. 정산 방식, 연장 계산법, 사후 기록 요령까지 첫 방문자를 위해 상세히 해설합니다.",
+          "breadcrumb": { "@id": "https://ilsang-log.shop/#breadcrumb" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://ilsang-log.shop/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://ilsang-log.shop/",
+                "name": "홈"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "룸티(Room Charge)와 TC(Table Charge)의 정확한 차이는 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "룸티는 해당 공간을 사용하는 시간에 관계없이 혹은 고정적으로 부과되는 방 이용료를 뜻하며, TC(Table Charge)는 접객원 또는 담당 스태프의 시간당 혹은 묶음당 봉사료를 의미합니다. 업종에 따라 정산 시 이 두 가지가 별도로 청구되므로 사전에 반드시 구별하여 인지해야 합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "이용 중 연장(Extension)이 발생할 때 정산은 어떻게 계산되나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "연장 시에는 처음 약정된 기본 시간 단위가 아닌, 추가된 시간(보통 30분 또는 1시간 단위)에 맞춰 비례배분된 TC와 주대, 혹은 연장 룸티가 가산됩니다. 연장 결정이 내려지는 시점의 정산 기준을 담당자에게 미리 확인받는 것이 사후 오해를 방지하는 가장 안전한 방법입니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "방문 후 최종 정산 단계에서 불일치가 있을 땐 어떻게 대처해야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "최종 계산서의 상세 내역(룸티, 주대, TC 개수 및 시간)이 처음 약속받은 기준과 일치하는지 대조해야 합니다. 첫 방문자라도 의문이 생기는 항목은 당당하게 설명을 요청할 권리가 있으며, 정산 내역이 포함된 영수증이나 확인증을 기록용으로 받아두는 것이 좋습니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body data-theme="clip-paper" data-build="b482fa1c">
+
+    <!-- Header / Masthead -->
+    <header class="r-box-c96l" data-v="x92k7a">
+        <div class="k-wrap-p7f8-row">
+            <a href="/" class="n-btn-7n1u">유흥 용어 정리</a>
+            <nav class="r-ico-umcf">
+                <a href="#dictionary">업종별 용어 사전</a>
+                <a href="#narrative">마무리 정산 가이드</a>
+                <a href="#faq">자주 묻는 질문</a>
+            </nav>
+            <button class="q-main-8u04" aria-label="메뉴 열기">☰</button>
+        </div>
+        <div class="v-btn-m1n7">
+            여러 지역과 다양한 업종의 정보와 요금 체계(룸티, 주대, TC 등)를 투명하고 객관적으로 정리하여 해설하는 사전형 정보 블로그입니다.
+        </div>
+        <div class="n-item-p5hr-row">
+            <span>LOCATION: SEOUL</span>
+            <span>DOMAIN: ILSANG-LOG.SHOP</span>
+            <span>TONE: PROFESSIONAL</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" data-v="k82a1b">
+            <div class="m-card-nkfd-grid">
+                <div>
+                    <h1 class="m-card-nkfd-tagline">
+                        모든 경험의 완성은<br>
+                        <span>마지막 10분</span>의 정산에 있습니다.
+                    </h1>
+                    <p class="m-card-nkfd-lead">
+                        처음 방문하는 환경일수록 용어의 모호함은 오해를 낳기 마련입니다. 본 블로그는 셔츠룸부터 가라오케, 마사지, 펍에 이르기까지 다양한 업종의 정산 구조와 업계 표준 용어를 투명하게 분석합니다. 처음 이용하는 분들이라도 당황하지 않고 정확한 권리를 요구할 수 있도록 안내합니다.
+                    </p>
+                </div>
+                <div style="border: 1px solid var(--primary); padding: 32px; background-color: var(--card-bg);">
+                    <span class="mono" style="display:block; margin-bottom: 12px;">[CHECKPOINT]</span>
+                    <p style="font-size: 0.95rem; margin-bottom: 0;">
+                        "모르는 것은 부끄러운 일이 아닙니다. 요금 체계를 명확히 질문하고 사전에 확인하는 태도야말로 합리적인 소비의 시작이자 끝입니다."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dictionary Grid Section -->
+        <section id="dictionary" data-v="p91l3c">
+            <h2>업종별 요금 산정 방식 및 용어 사전</h2>
+            <p>다양한 업종에서 통용되는 핵심 요금 구조인 <strong>룸티(Room Charge), 주대(Alcohol Fee), TC(Table Charge)</strong>의 실제 적용 방식을 세부 업종별 특징과 함께 정리했습니다.</p>
+            
+            <div class="k-grid-vk7x-container">
+                <!-- Card 1 -->
+                <div class="m-list-t07o q-head-6g84-left">
+                    <div>
+                        <span class="mono">01 / SHIRT-ROOM</span>
+                        <h3>셔츠룸 요금 체계</h3>
+                        <p>정해진 시간 단위로 정산이 이루어지며, 입장 단계에서 시스템 가격이 명시되는 것이 일반적입니다. 기본 주대와 별도로 스태프 시간당 봉사료(TC)가 타이트하게 연동됩니다.</p>
+                    </div>
+                    <span class="mono" style="color: var(--accent);">[TC + 주대 중심]</span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="m-list-t07o">
+                    <div>
+                        <span class="mono">02 / ROOM-SALON</span>
+                        <h3>룸싸롱 정산 구조</h3>
+                        <p>고급화된 형태일수록 룸티가 고정적으로 발생하고, 주류의 등급에 따른 주대가 전체 예산의 큰 비중을 차지합니다. 정산 시 사전 설명에 없던 추가 옵션 음료가 포함되는지 반드시 확인하십시오.</p>
+                    </div>
+                    <span class="mono" style="color: var(--accent);">[룸티 + 주대 고정]</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="m-list-t07o q-head-6g84-right">
+                    <div>
+                        <span class="mono">03 / TEN-PRO</span>
+                        <h3>텐프로 요금 특징</h3>
+                        <p>동시 서빙 시스템으로 인해 TC가 고정 시간이 아닌 테이블 순환 횟수나 묶음 단위로 계산되는 독특한 방식을 취합니다. 정산의 복잡도가 가장 높은 편이므로 사전 확인이 필수적입니다.</p>
+                    </div>
+                    <span class="mono" style="color: var(--accent);">[정밀 로테이션 TC]</span>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="m-list-t07o">
+                    <div>
+                        <span class="mono">04 / TEN-CAFE & .5</span>
+                        <h3>텐카페 및 쩜오 차이</h3>
+                        <p>텐프로보다 묶음 정산 단위가 직관적이지만, 여전히 로테이션에 따른 가중치가 부여됩니다. 주대 자체의 기본 세팅 단가가 높기 때문에 연장 시 예산 변동 폭이 매우 큽니다.</p>
+                    </div>
+                    <span class="mono" style="color: var(--accent);">[시간당 연장 가산]</span>
+                </div>
+
+                <!-- Card 5 (Pullquote / Highlight) -->
+                <div class="m-list-t07o m-list-t07o-pullquote">
+                    <div>
+                        <span class="mono">[INSIGHT]</span>
+                        <h3>"정산에 관한 질문은 당연한 권리입니다"</h3>
+                        <p>어려운 용어나 모호한 추가 금액에 대해 현장에서 직접 조목조목 확인하는 소비자가 불필요한 과다 청구를 미연에 방지할 수 있습니다.</p>
+                    </div>
+                    <span class="mono">SYSTEM RULE #1</span>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="m-list-t07o">
+                    <div>
+                        <span class="mono">05 / HY-PUBLIC</span>
+                        <h3>하이퍼블릭 시스템</h3>
+                        <p>대중성을 강조한 구조로 룸티를 면제하거나 최소화하고 정해진 시간당 TC를 투명하게 정찰제로 운영하는 경우가 많습니다. 입문자가 비교적 계산하기 용이한 구조입니다.</p>
+                    </div>
+                    <span class="mono" style="color: var(--accent);">[정찰제 지향]</span>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="m-list-t07o q-head-6g84-left">
+                    <div>
+                        <span class="mono">06 / POOL-SALON</span>
+                        <h3>풀싸롱 코스 정산</h3>
+                        <p>시간 경과에 따른 추가 비용보다는 최초 입장 시 약정된 원타임(One-time) 코스 요금 체계가 지배적입니다. 중간에 추가 음료나 연장을 선택하지 않는 한 추가 정산 리스크가 적습니다.</p>
+                    </div>
+                    <span class="mono" style="color: var(--accent);">[원타임 패키지]</span>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="m-list-t07o">
+                    <div>
+                        <span class="mono">07 / KARAOKE & SONG</span>
+                        <h3>가라오케 및 노래방</h3>
+                        <p>기본적으로 시간당 룸티 혹은 기기 대여료가 메인입니다. 스태프를 동반하지 않는 순수 이용일 경우 주류 및 안주 단품 요금의 단순 합산으로 계산이 명확하게 떨어집니다.</p>
+                    </div>
+                    <span class="mono" style="color: var(--accent);">[시간당 대여료 기준]</span>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="m-list-t07o q-head-6g84-right">
+                    <div>
+                        <span class="mono">08 / BUSINESS-CLUB</span>
+                        <h3>비즈니스클럽 요금</h3>
+                        <p>접대 목적의 단체 방문이 많아 세트 단위의 주대가 기본 구성됩니다. 영수증 발행 시 부가세(VAT)와 봉사료가 별도 표기되는 비중이 높으므로 합산 금액을 잘 살펴야 합니다.</p>
+                    </div>
+                    <span class="mono" style="color: var(--accent);">[세트 단가 위주]</span>
+                </div>
+
+                <!-- Card 10 (Pullquote / Highlight) -->
+                <div class="m-list-t07o m-list-t07o-pullquote">
+                    <div>
+                        <span class="mono">[ALERT]</span>
+                        <h3>"연장 계산은 누적 방식이 아닙니다"</h3>
+                        <p>최초 이용 시간이 종료되는 시점에 연장 여부를 결정할 때, 연장 분에 대한 별도 단가(할인 배제 등)가 적용되는지 꼭 인지하고 있어야 합니다.</p>
+                    </div>
+                    <span class="mono">SYSTEM RULE #2</span>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="m-list-t07o">
+                    <div>
+                        <span class="mono">09 / MASSAGE & PUB</span>
+                        <h3>마사지 및 펍 정산</h3>
+                        <p>개별 테라피 코스 요금 또는 펍에서의 잔 단위/병 단위 선결제 혹은 후결제 시스템입니다. 주류와 서비스 요금이 독립적으로 분리되어 정산 구조가 가장 단순합니다.</p>
+                    </div>
+                    <span class="mono" style="color: var(--accent);">[단품 및 코스 직관제]</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Narrative Section: Focus on Ending/Settlement -->
+        <section id="narrative" data-v="s12d3e">
+            <div class="v-item-bxhl-container">
+                <h2>사후 정산 및 마무리 단계의 중요성</h2>
+                <p>
+                    많은 소비자들이 업소에 입장하는 순간의 분위기와 서비스 품질에 집중하지만, 실제로 그날의 만족도를 결정짓고 예기치 못한 불이익을 방지하는 핵심은 <strong>마지막 정산 단계</strong>에 있습니다. 자리가 끝나는 시점에서 정산 기준이 모호해지면 서로 간에 감정이 상하거나 부당한 지출이 발생할 우려가 큽니다.
+                </p>
+                <p>
+                    특히 첫 방문자들은 질문하기를 쑥스러워하거나 '알아서 잘 계산해 주겠지'라는 막연한 기대로 상황을 넘기곤 합니다. 하지만 상업적 공간에서의 모든 거래는 계약에 기반합니다. 계산서를 요청했을 때, 항목별 상세 단가(주대, 룸 사용료, 스태프 봉사료 등)가 처음 안내받은 조건과 완벽히 부합하는지 눈으로 직접 대조하는 습관을 가져야 합니다.
+                </p>
+
+                <div class="r-txt-jopc-box">
+                    <p>
+                        "정산 방식을 미리 정해두지 않으면, 자리가 길어지거나 인원이 변동될 때 계산의 기준점이 흔들리게 됩니다. 입장 전에 최종 결제 수단(카드, 계좌이체 등)에 따른 수수료 차이까지 투명하게 물어보는 것이 가장 세련된 소비 방식입니다."
+                    </p>
+                </div>
+
+                <h3>1. 연장(Extension) 및 조기 종료의 합리적 처리</h3>
+                <p>
+                    이용 도중 흥이 돋아 시간을 연장하거나, 반대로 개인 사정으로 인해 예정보다 일찍 자리를 마무리해야 하는 상황이 발생할 수 있습니다. 이때 정산 기준을 사전에 인지하지 못했다면 큰 갈등 요소가 됩니다.
+                </p>
+                <p>
+                    대부분의 업종에서는 연장 시 30분 혹은 1시간 단위로 추가 TC가 비례배분되어 정산되지만, 일부 시스템에서는 연장 시 추가 주류 세트 주문을 필수로 요구하기도 합니다. 반대로 조기 종료 시에는 기본 최소 약정 시간(보통 1세트 타임)에 대한 요금은 전액 청구되는 것이 업계 관행이므로, 남은 시간만큼의 환불을 요구하기는 어렵습니다. 이러한 규칙들을 미리 인지하고 중간 점검을 거쳐야 과도한 청구서를 마주하지 않습니다.
+                </p>
+
+                <h3>2. 다음 방문을 위한 기록과 기록의 누적</h3>
+                <p>
+                    만족스러운 경험을 마쳤거나, 혹은 아쉬운 부분이 있었더라도 정산이 끝난 후에는 가볍게 당일의 지출 내역을 기록해 두는 것을 권장합니다.
+                </p>
+                <p>
+                    지출한 총액, 주문한 품목의 수량, 그리고 정산을 담당했던 스태프나 지배인의 성함을 간단히 메모해 두면 다음 번 이용 시 훌륭한 협상 기준점이 됩니다. "지난번에는 동일 코스로 이 정도 정산이 이루어졌는데, 이번에도 같은 기준이 적용되나요?"라는 한마디는 담당자에게 신뢰감과 긴장감을 동시에 주어 한층 일관되고 투명한 서비스를 보장받는 지름길이 됩니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- Selection Criteria & Suitability (Asymmetric 2-Column) -->
+        <section id="criteria" data-v="c73f2a">
+            <h2>합리적 이용을 위한 선택 기준 및 체크리스트</h2>
+            <div class="x-btn-mlga-col">
+                <div style="border: 1px solid var(--primary); padding: 40px; background-color: var(--secondary);">
+                    <h3 style="color: var(--accent);">입장 전 3대 확인 사항</h3>
+                    <p>초행길일수록 문 앞에서의 3분 투자가 지갑을 지킵니다.</p>
+                    <ul style="list-style-type: square; margin-left: 20px; line-height: 2;">
+                        <li><strong>기본 제공 내역 확인:</strong> 기본 주대에 포함된 음료와 안주의 정확한 수량 및 종류 확인</li>
+                        <li><strong>시간 단위 정밀 측정:</strong> 1타임의 기준이 60분인지, 50분 혹은 90분인지 명확히 파악</li>
+                        <li><strong>부가 비용 여부:</strong> 룸티, 웨이터 팁, 부가세(VAT)가 최종 합계에 포함되어 있는지 사전 질문</li>
+                    </ul>
+                </div>
+                <div style="border: 1px solid var(--primary); padding: 40px; background-color: var(--card-bg);">
+                    <h3>조건별 적합성 추천</h3>
+                    <p>인원 구성과 목적에 따라 가장 정산 오류가 적은 합리적인 업종 선택 가이드입니다.</p>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--primary); text-align: left;">
+                                <th style="padding: 10px 0;">이용 목적</th>
+                                <th style="padding: 10px 0;">권장 업종</th>
+                                <th style="padding: 10px 0;">정산 난이도</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--primary);">
+                                <td style="padding: 12px 0;">비즈니스 접대</td>
+                                <td style="padding: 12px 0;">쩜오 / 비즈니스클럽</td>
+                                <td style="padding: 12px 0; font-family: var(--font-mono);">상 (정밀대조 필요)</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--primary);">
+                                <td style="padding: 12px 0;">동료간 친목</td>
+                                <td style="padding: 12px 0;">하이퍼블릭 / 셔츠룸</td>
+                                <td style="padding: 12px 0; font-family: var(--font-mono);">중 (시간체크 필수)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px 0;">캐주얼 모임</td>
+                                <td style="padding: 12px 0;">가라오케 / 펍</td>
+                                <td style="padding: 12px 0; font-family: var(--font-mono);">하 (단품 정산 위주)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" data-v="f45g6h">
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                
+                <div class="q-btn-zweh-item">
+                    <div class="q-btn-zweh-trigger">
+                        Q1. 룸티(Room Charge)와 TC(Table Charge)의 정확한 차이는 무엇인가요?
+                    </div>
+                    <div class="q-btn-zweh-content">
+                        룸티는 해당 공간을 사용하는 시간에 관계없이 혹은 고정적으로 부과되는 방 이용료를 뜻하며, TC(Table Charge)는 접객원 또는 담당 스태프의 시간당 혹은 묶음당 봉사료를 의미합니다. 업종에 따라 정산 시 이 두 가지가 별도로 청구되므로 사전에 반드시 구별하여 인지해야 합니다.
+                    </div>
+                </div>
+
+                <div class="q-btn-zweh-item">
+                    <div class="q-btn-zweh-trigger">
+                        Q2. 이용 중 연장(Extension)이 발생할 때 정산은 어떻게 계산되나요?
+                    </div>
+                    <div class="q-btn-zweh-content">
+                        연장 시에는 처음 약정된 기본 시간 단위가 아닌, 추가된 시간(보통 30분 또는 1시간 단위)에 맞춰 비례배분된 TC와 주대, 혹은 연장 룸티가 가산됩니다. 연장 결정이 내려지는 시점의 정산 기준을 담당자에게 미리 확인받는 것이 사후 오해를 방지하는 가장 안전한 방법입니다.
+                    </div>
+                </div>
+
+                <div class="q-btn-zweh-item">
+                    <div class="q-btn-zweh-trigger">
+                        Q3. 방문 후 최종 정산 단계에서 불일치가 있을 땐 어떻게 대처해야 하나요?
+                    </div>
+                    <div class="q-btn-zweh-content">
+                        최종 계산서의 상세 내역(룸티, 주대, TC 개수 및 시간)이 처음 약속받은 기준과 일치하는지 대조해야 합니다. 첫 방문자라도 의문이 생기는 항목은 당당하게 설명을 요청할 권리가 있으며, 정산 내역이 포함된 영수증이나 확인증을 기록용으로 받아두는 것이 좋습니다.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer with Author Bio and Colophon -->
+    <footer data-v="z99x1y">
+        <div style="width: 100%;">
+            <!-- E-A-T Author Bio Block -->
+            <div class="k-btn-v7fq-section">
+                <div class="k-btn-v7fq-avatar">HG</div>
+                <div>
+                    <h4 style="margin-bottom: 4px; font-size: 1.1rem; color: var(--primary);">작성자: 로컬 트렌드 분석가 한결</h4>
+                    <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--primary); text-align: left;">
+                        서울 전역의 다양한 로컬 상권 및 서비스 업종의 정산 체계를 5년간 투명하게 모니터링하고 기록해 온 전문 에디터입니다. 소비자의 권리 보호를 위한 객관적 기준을 제공합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 40px; border-top: 1px solid var(--secondary); padding-top: 20px; flex-wrap: wrap; gap: 20px;">
+            <div>
+                © ilsang-log.shop. All Rights Reserved.
+            </div>
+            <div>
+                <span class="mono">COLOPHON: CLIP-PAPER THEME V6 (RETRO NEO-BRUT)</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Dot Navigation -->
+    <div class="t-grid-uib6">
+        <div class="n-txt-hams active" onclick="document.getElementById('hero').scrollIntoView({behavior: 'smooth'});" title="처음으로"></div>
+        <div class="n-txt-hams" onclick="document.getElementById('dictionary').scrollIntoView({behavior: 'smooth'});" title="업종 용어"></div>
+        <div class="n-txt-hams" onclick="document.getElementById('narrative').scrollIntoView({behavior: 'smooth'});" title="정산 가이드"></div>
+        <div class="n-txt-hams" onclick="document.getElementById('criteria').scrollIntoView({behavior: 'smooth'});" title="선택 기준"></div>
+        <div class="n-txt-hams" onclick="document.getElementById('faq').scrollIntoView({behavior: 'smooth'});" title="자주 묻는 질문"></div>
+    </div>
+
+    <!-- DOM Noise Semantic Markers -->
+    <span aria-hidden="true" style="display:none;">[system-marker-ref-108]</span>
+    <span aria-hidden="true" style="display:none;">[pbn-secure-lock-v6]</span>
+    <span aria-hidden="true" style="display:none;">[hash-checksum-99a3bc]</span>
+
+    <!-- Javascript for basic interactivity (Active Dots and Mobile Menu) -->
+    <script>
+        // Simple active state tracker for dots on scroll
+        window.addEventListener('scroll', () => {
+            const sections = ['hero', 'dictionary', 'narrative', 'criteria', 'faq'];
+            const dots = document.querySelectorAll('.n-txt-hams');
+            
+            let currentActive = 0;
+            sections.forEach((id, index) => {
+                const el = document.getElementById(id);
+                if (el) {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                        currentActive = index;
+                    }
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                if (index === currentActive) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        });
+
+        // Mobile Burger Menu trigger alert for dictionary scroll
+        document.querySelector('.q-main-8u04').addEventListener('click', () => {
+            document.getElementById('dictionary').scrollIntoView({behavior: 'smooth'});
+        });
+    </script>
+</body>
+<!-- Random Hex Hash: #2c9fa3, #b4451f -->
+</html>
