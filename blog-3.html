@@ -3,436 +3,629 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>유흥 용어 정리 — 최신 트렌드와 투명한 정산 가이드</title>
-    <meta name="description" content="업종별 요금 체계와 용어의 명확한 정의. 정산 방식, 연장 계산법, 사후 기록 요령까지 첫 방문자를 위해 상세히 해설합니다.">
-    <meta name="keywords" content="유흥 용어 정리, 룸티, 주대, TC, 셔츠룸 용어, 룸싸롱 주대, 텐프로 쩜오 차이">
+    <title>방문 전 준비 목록 — 모임 성격에 맞춘 업종별 용어 정리</title>
+    <meta name="description" content="비즈니스와 사교 모임을 준비하는 실무자를 위한 가이드. 룸싸롱, 텐프로, 가라오케, 마사지 등 다양한 업종의 모호한 용어와 시스템 개념을 투명하게 비교 정리합니다.">
+    <meta name="keywords" content="방문 전 준비 목록, 업종별 용어, 비즈니스 모임 준비, 가라오케 차이, 룸싸롱 개념">
     <link rel="canonical" href="https://ilsang-log.shop/blog-3.html">
     
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="유흥 용어 정리 — 첫 방문자를 위한 정산 및 사후 확인 가이드">
-    <meta property="og:description" content="업종별 요금 체계와 용어의 명확한 정의. 정산 방식, 연장 계산법, 사후 기록 요령까지 첫 방문자를 위해 상세히 해설합니다.">
-    <meta property="og:url" content="https://ilsang-log.shop/blog-3.html">
+    <!-- 필수 메타 태그 -->
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-journal-dusk">
     
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="방문 전 준비 목록 — 모임 성격에 맞춘 업종별 용어 정리">
+    <meta property="og:description" content="비즈니스와 사교 모임을 준비하는 실무자를 위한 가이드. 업종별 모호한 용어와 개념을 투명하게 비교합니다.">
+    <meta property="og:url" content="https://ilsang-log.shop/blog-3.html">
+
     <style>
-        /* CSS RESET & VARIABLES */
+        /* CSS Reset & Variable */
+        :root {
+            --bg-color: #121214;
+            --card-bg: #1c1c1e;
+            --text-main: #f5f5f7;
+            --text-muted: #a1a1a6;
+            --accent-color: #e5a93c;
+            --accent-hover: #f3c26d;
+            --border-color: #2c2c2e;
+            --font-serif: "Georgia", "Playfair Display", "Noto Serif KR", serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans KR", sans-serif;
+        }
+
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        :root {
-            --primary-color: #1a1a24;
-            --secondary-color: #c5a880;
-            --text-main: #f3f4f6;
-            --text-sub: #9ca3af;
-            --bg-base: #0f0f15;
-            --bg-card: #1e1e2a;
-            --border-color: #2e2e3e;
-            --font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-        }
+
         body {
-            background-color: var(--bg-base);
+            background-color: var(--bg-color);
             color: var(--text-main);
-            font-family: var(--font-family);
+            font-family: var(--font-sans);
             line-height: 1.7;
             letter-spacing: -0.02em;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* HEADER / NAVIGATION */
-        header {
-            background-color: rgba(26, 26, 36, 0.95);
-            border-bottom: 1px solid var(--border-color);
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hamburger Menu Pattern */
+        .menu-wrapper {
             position: sticky;
             top: 0;
-            z-index: 1000;
-            backdrop-filter: blur(8px);
+            z-index: 100;
+            background-color: rgba(18, 18, 20, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
         }
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
+
+        .menu-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
-        }
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: var(--secondary-color);
-            text-decoration: none;
-            letter-spacing: 0.05em;
-        }
-        .nav-menu {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        .nav-menu a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .nav-menu a:hover {
-            color: var(--secondary-color);
+            height: 64px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
         }
 
-        /* HERO SECTION */
-        .hero-section {
-            padding: 6rem 2rem 4rem;
+        .brand-logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-main);
+        }
+
+        .brand-logo span {
+            color: var(--accent-color);
+        }
+
+        /* Hamburger Toggle & Nav */
+        .menu-btn {
+            display: none;
+        }
+
+        .menu-icon {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            user-select: none;
+            padding: 10px;
+        }
+
+        .menu-icon .navicon {
+            background: var(--text-main);
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 20px;
+        }
+
+        .menu-icon .navicon:before, .menu-icon .navicon:after {
+            background: var(--text-main);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+
+        .menu-icon .navicon:before {
+            top: 6px;
+        }
+
+        .menu-icon .navicon:after {
+            bottom: 6px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent-color);
+        }
+
+        /* Hamburger CSS Trigger */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                width: 100%;
+                background-color: var(--card-bg);
+                padding: 24px;
+                border-bottom: 1px solid var(--border-color);
+                gap: 16px;
+            }
+
+            .menu-btn:checked ~ .nav-links {
+                display: flex;
+            }
+
+            .menu-btn:checked ~ .menu-icon .navicon {
+                background: transparent;
+            }
+
+            .menu-btn:checked ~ .menu-icon .navicon:before {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+
+            .menu-btn:checked ~ .menu-icon .navicon:after {
+                transform: rotate(45deg);
+                bottom: 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+
+        /* Date Journal Header (No Hero, Slightly Rotated Title) */
+        .k-list-t0ik-block {
+            padding: 80px 0 40px 0;
             text-align: center;
-            background: linear-gradient(180deg, #1a1a24 0%, #0f0f15 100%);
             border-bottom: 1px solid var(--border-color);
         }
-        .hero-container {
+
+        .k-list-t0ik-sub {
+            font-family: var(--font-serif);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--accent-color);
+            margin-bottom: 16px;
+        }
+
+        .k-list-t0ik-title {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-main);
             max-width: 800px;
             margin: 0 auto;
+            position: relative;
         }
-        .hero-tag {
+
+        .k-list-t0ik-title span {
             display: inline-block;
-            background-color: rgba(197, 168, 128, 0.1);
-            color: var(--secondary-color);
-            padding: 0.4rem 1rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(197, 168, 128, 0.2);
-        }
-        h1 {
-            font-size: 2.8rem;
-            line-height: 1.25;
-            font-weight: 800;
-            color: #ffffff;
-            margin-bottom: 1.5rem;
-        }
-        .hero-desc {
-            font-size: 1.15rem;
-            color: var(--text-sub);
-            max-width: 600px;
-            margin: 0 auto;
+            transform: rotate(-1.5deg);
+            background: linear-gradient(120deg, rgba(229,169,60,0.15) 0%, rgba(229,169,60,0.05) 100%);
+            padding: 4px 12px;
+            border-radius: 4px;
+            border: 1px dashed rgba(229,169,60,0.3);
         }
 
-        /* CONTAINER */
-        .main-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        /* CLIP GRID SECTION (TRENDS) */
-        .grid-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            border-left: 4px solid var(--secondary-color);
-            padding-left: 1rem;
-        }
-        .clip-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-bottom: 5rem;
-        }
-        .clip-card {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 2.5rem;
-            transition: transform 0.3s, border-color 0.3s;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .clip-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--secondary-color);
-        }
-        .card-meta {
-            font-size: 0.8rem;
-            color: var(--secondary-color);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-            letter-spacing: 0.05em;
-        }
-        .card-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 1rem;
-        }
-        .card-text {
-            font-size: 0.95rem;
-            color: var(--text-sub);
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        /* DETAILED CONTENT SECTION */
-        .content-section {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 3.5rem;
-            margin-bottom: 5rem;
-        }
-        .section-header {
-            margin-bottom: 2.5rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 1.5rem;
-        }
-        .section-header h2 {
-            font-size: 2rem;
-            color: #ffffff;
-            font-weight: 700;
-        }
-        .section-body p {
-            margin-bottom: 1.8rem;
-            color: var(--text-main);
-            font-size: 1.05rem;
-        }
-        .section-body p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* FAQ SECTION */
-        .faq-section {
-            margin-bottom: 5rem;
-        }
-        .faq-item {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            padding: 1.5rem 2rem;
-        }
-        .faq-question {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        .faq-question::before {
-            content: "Q.";
-            color: var(--secondary-color);
-            font-size: 1.2rem;
-        }
-        .faq-answer {
-            color: var(--text-sub);
-            font-size: 0.95rem;
-            line-height: 1.6;
-            padding-left: 1.5rem;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #0b0b10;
-            border-top: 1px solid var(--border-color);
-            padding: 4rem 2rem;
-            color: var(--text-sub);
-            font-size: 0.9rem;
-        }
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-        .footer-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-        .footer-info h4 {
-            color: #ffffff;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-        .footer-links {
-            display: flex;
-            gap: 1.5rem;
-        }
-        .footer-links a {
-            color: var(--text-sub);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .footer-links a:hover {
-            color: var(--secondary-color);
-        }
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            padding-top: 2rem;
-            text-align: center;
-            font-size: 0.8rem;
-        }
-
-        /* RESPONSIVE */
         @media (max-width: 768px) {
-            h1 {
+            .k-list-t0ik-title {
                 font-size: 2rem;
             }
-            .header-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            .nav-menu {
-                gap: 1rem;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .clip-grid {
+        }
+
+        /* Main Editorial Layout */
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 48px;
+            padding: 60px 0;
+        }
+
+        @media (max-width: 900px) {
+            .editorial-grid {
                 grid-template-columns: 1fr;
+                gap: 40px;
             }
-            .content-section {
-                padding: 2rem 1.5rem;
+        }
+
+        /* Main Content Styling */
+        .main-article {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+
+        .article-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .section-tag {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            letter-spacing: 0.1em;
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            color: var(--text-main);
+            border-left: 3px solid var(--accent-color);
+            padding-left: 16px;
+        }
+
+        .article-text {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.85;
+            text-align: justify;
+        }
+
+        /* Callout Box */
+        .callout-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-color);
+            padding: 24px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .callout-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .sidebar-widget {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 28px;
+            border-radius: 12px;
+        }
+
+        .widget-title {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .widget-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .widget-item a {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .widget-item a:hover {
+            color: var(--accent-color);
+        }
+
+        .widget-date {
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        /* FAQ Accordion Style (Pure CSS) */
+        .faq-section {
+            border-top: 1px solid var(--border-color);
+            padding-top: 60px;
+            margin-top: 20px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .faq-trigger {
+            display: none;
+        }
+
+        .faq-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .faq-title::after {
+            content: "+";
+            font-size: 1.4rem;
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .faq-trigger:checked ~ .faq-content {
+            max-height: 300px;
+            padding-top: 16px;
+        }
+
+        .faq-trigger:checked ~ .faq-title::after {
+            content: "−";
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0b0b0c;
+            border-top: 1px solid var(--border-color);
+            padding: 60px 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
             }
+        }
+
+        .footer-brand {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            color: var(--text-main);
+            margin-bottom: 16px;
+        }
+
+        .footer-text {
+            max-width: 600px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER / NAVIGATION -->
-    <header>
-        <div class="header-container">
-            <a href="/" class="logo">INFO LOG</a>
-            <ul class="nav-menu">
-                <li><a href="/">홈</a></li>
-                <li><a href="/trend">트렌드 분석</a></li>
-            </ul>
+    <!-- Hamburger Menu Navigation -->
+    <div class="menu-wrapper">
+        <nav class="menu-container">
+            <a href="https://ilsang-log.shop" class="brand-logo">Dusk<span>Journal</span></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <div class="nav-links">
+                <a href="https://ilsang-log.shop" class="active">트렌드 가이드</a>
+                <a href="#industry-comparison">업종별 비교</a>
+                <a href="#checklist-section">준비 목록</a>
+                <a href="#faq-section">자주 묻는 질문</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Date Journal Header -->
+    <header class="container">
+        <div class="k-list-t0ik-block">
+            <p class="k-list-t0ik-sub">Gathering Strategy &amp; Trends</p>
+            <h1 class="k-list-t0ik-title">
+                성공적인 모임을 위한 <span>방문 전 준비 목록</span>
+            </h1>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-        <div class="hero-container">
-            <span class="hero-tag">업계 표준 분석 리포트</span>
-            <h1>유흥 용어 정리 및 정산 시스템의 최신 트렌드</h1>
-            <p class="hero-desc">서울 주요 상권의 업종별 용어 정의와 요금 체계의 투명화 경향을 데이터와 실무적 관점에서 상세히 분석합니다.</p>
+    <!-- Main Content Area -->
+    <main class="container">
+        <div class="editorial-grid">
+            
+            <!-- Left: Main Article -->
+            <article class="main-article">
+                
+                <!-- Section 1: Intro -->
+                <section class="article-section">
+                    <span class="section-tag">Prologue</span>
+                    <h2 class="section-title">모임의 성격을 규정하는 첫 단추, 올바른 정보 탐색</h2>
+                    <p class="article-text">
+                        중요한 비즈니스 파트너와의 미팅이나 오랜만에 모이는 사교 모임을 준비하다 보면, 생각보다 선택해야 할 업종의 종류가 너무 다양해서 당황하곤 하죠. 가라오케, 룸싸롱, 텐프로, 마사지 등 명칭은 익숙하지만 정작 내부 시스템이나 비용 구조, 그리고 분위기가 어떻게 다른지 명확히 아는 실무자는 드뭅니다. 모호하게 알고 접근했다가 모임의 성격과 맞지 않아 곤란한 상황에 처하는 경우를 예방하려면 방문 전 철저한 개념 정리가 필수적입니다.
+                    </p>
+                    <p class="article-text">
+                        최근의 사교 트렌드는 과거의 무분별한 유흥 문화에서 벗어나 투명성과 효율성을 중시하는 방향으로 가파르게 변화하고 있답니다. 단순히 비싼 곳을 찾는 것이 아니라, 모임의 목적과 참석자의 성향에 정확히 부합하는 공간을 선택하는 것이 실무자의 핵심 역량으로 평가받는 시대가 되었죠. 이번 가이드에서는 각 업종의 구조적 차이점을 명확히 짚어보고, 예약 단계부터 현장 조율까지 실패 없는 체크리스트를 상세히 제안해 드릴게요.
+                    </p>
+                </section>
+
+                <!-- Section 2: Industry Breakdown -->
+                <section id="industry-comparison" class="article-section">
+                    <span class="section-tag">Comparison</span>
+                    <h2 class="section-title">가라오케부터 룸싸롱까지, 모호한 용어 투명하게 비교하기</h2>
+                    <p class="article-text">
+                        가장 먼저 혼선을 빚는 개념이 바로 일반 가라오케와 멤버십 형태로 운영되는 룸 형식 업종들의 차이점입니다. 가라오케는 비교적 캐주얼한 분위기에서 음향 장비와 주류를 즐기는 공간으로, 개방적인 사교나 가벼운 뒤풀이에 적합해요. 반면, 흔히 룸싸롱이나 텐프로 등으로 분류되는 업종은 철저히 프라이빗한 공간 제공과 일대일 밀착 응대 서비스를 기본으로 작동합니다. 시스템의 깊이와 서비스 제공자의 전문성에 따라 비용 편차가 매우 크게 발생한다는 특징이 있죠.
+                    </p>
+                    <p class="article-text">
+                        또한 마사지나 힐링 스파 계열의 업종은 모임의 연장선이라기보다, 긴장된 비즈니스 미팅 이후의 피로 회복이나 개인적인 휴식을 목적으로 선택하는 경우가 많습니다. 이처럼 업종마다 제공하는 핵심 가치가 완전히 다르기 때문에, 사전에 해당 업소의 정확한 운영 형태를 파악하지 않으면 예상치 못한 지출이나 어색한 분위기가 연출될 수 있습니다. 각 공간의 고유한 룰을 미리 인지하는 것만으로도 실무적인 실수를 절반 이상 줄일 수 있답니다.
+                    </p>
+
+                    <div class="callout-box">
+                        <div class="callout-title">💡 실무자 팁: 테이블 차지와 TC의 개념</div>
+                        <p class="callout-text">
+                            일반 가라오케는 세트 주류와 룸비(시간당)가 기본 구성이지만, 전문 룸 업종은 '테이블 차지' 외에 스태프의 'TC(Table Charge/Time Charge)'가 별도로 추가되는 구조입니다. 예약 문의 시 총액에 이 비용들이 모두 포함되어 있는지 명확히 확인하는 것이 좋습니다.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Section 3: Pre-visit Checklist -->
+                <section id="checklist-section" class="article-section">
+                    <span class="section-tag">Checklist</span>
+                    <h2 class="section-title">방문 전 반드시 확인해야 할 필수 체크리스트 4단계</h2>
+                    <p class="article-text">
+                        첫째, **참석 인원 및 성향 분석**입니다. 비즈니스 바이어가 참석하는 자리인지, 혹은 내부 임원진의 편안한 친목 도모인지에 따라 공간의 격조가 달라져야 합니다. 조용한 대화가 핵심이라면 음향이 너무 강조된 가라오케보다는 방음이 철저하고 독립적인 프리미엄 룸을 선택하는 것이 안전하죠. 참석자의 연령대와 선호하는 주종(위스키, 와인, 샴페인 등)을 미리 조사하는 것도 센스 있는 준비의 시작입니다.
+                    </p>
+                    <p class="article-text">
+                        둘째, **예산 구조의 투명한 확인**입니다. 많은 분들이 현장에서 가장 당황하는 부분이 바로 '추가 요금' 부과입니다. 기본 주류 세트 외에 연장 시간당 발생하는 추가 비용, 특정 주종 변경 시의 차액, 그리고 봉사료(Tax &amp; Service Charge)가 별도로 붙는지 유선상으로 확실히 짚고 넘어가야 합니다. "알아서 잘 해드리겠다"는 식의 구두 약속보다는 명확한 수치로 정리된 견적을 요구하는 습관이 중요합니다.
+                    </p>
+                    <p class="article-text">
+                        셋째, **예약 담당자와의 사전 조율**입니다. 업소의 매니저나 담당 실장과의 사전 소통은 모임의 성패를 좌우합니다. 당일 모임의 성격이 무거운 비즈니스 조율인지, 유쾌한 축하 자리인지를 미리 귀띔해 주면 그에 맞춰 스태프 배치와 룸의 배정이 달라지기 마련이거든요. 특별히 신경 써야 하는 VIP가 있다면 좌석 배치나 서빙 타이밍까지도 세부적으로 요청해 둘 수 있습니다.
+                    </p>
+                </section>
+
+                <!-- Section 4: Situational Guide -->
+                <section class="article-section">
+                    <span class="section-tag">Scenarios</span>
+                    <h2 class="section-title">상황별 맞춤 가이드: 인원과 목적에 따른 분기점</h2>
+                    <p class="article-text">
+                        소규모(2~3인) 비즈니스 미팅의 경우에는 화려하고 소란스러운 대형 업소보다는 보안이 철저히 유지되는 소규모 프라이빗 멤버십 룸을 권장합니다. 밀도 높은 대화가 오가야 하므로 주변 소음이 완벽히 차단되는 방음 설비가 최우선 기준이 되어야 하죠. 이때는 주류의 다양성보다는 정갈한 안주 구성과 품격 있는 서빙 서비스가 모임의 격을 한층 높여줍니다.
+                    </p>
+                    <p class="article-text">
+                        반면, 단체 회식이나 프로젝트 성공 기념 모임(8인 이상)의 경우에는 공간의 개방감과 엔터테인먼트 요소가 중요해집니다. 최신 음향 시스템이 구비된 대형 가라오케나 파티룸 형태의 공간이 유리하며, 고가의 주류보다는 대중적인 세트 메뉴를 여러 개 구성하여 가성비를 챙기는 편이 현명합니다. 인원이 많을수록 동선이 복잡해지므로 화장실의 위치나 주차 공간(발레파킹 서비스 제공 여부)을 반드시 미리 체크해야 불만이 나오지 않습니다.
+                    </p>
+                </section>
+
+            </article>
+
+            <!-- Right: Sidebar (Internal Links & Trends) -->
+            <aside class="sidebar">
+                
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">최신 트렌드 브리핑</h3>
+                    <ul class="widget-list">
+                        <li class="widget-item">
+                            <span class="widget-date">2024.11.02</span>
+                            <a href="#">강남권 프라이빗 라운지 예약률 전년 대비 15% 상승 원인 분석</a>
+                        </li>
+                        <li class="widget-item">
+                            <span class="widget-date">2024.10.28</span>
+                            <a href="#">비즈니스 사교 모임에서 기피해야 할 업소 유형 3가지</a>
+                        </li>
+                        <li class="widget-item">
+                            <span class="widget-date">2024.10.15</span>
+                            <a href="#">투명한 정찰제 도입하는 현대식 가라오케의 생존 전략</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">핵심 요약 노트</h3>
+                    <p class="callout-text" style="font-size: 0.9rem; line-height: 1.6;">
+                        모임 준비의 기본은 '불확실성 제거'에 있습니다. 가격, 시간, 서비스 범위 세 가지를 방문 전에 명확히 확정 짓는 것만으로도 90% 이상의 컴플레인을 예방할 수 있다는 점을 꼭 기억하세요.
+                    </p>
+                </div>
+
+            </aside>
+
         </div>
-    </section>
 
-    <!-- MAIN CONTAINER -->
-    <main class="main-container">
-
-        <!-- SECTION: CLIP GRID (TRENDS) -->
-        <h2 class="grid-title">핵심 동향 분석 (Clip Grid)</h2>
-        <div class="clip-grid">
-            <div class="clip-card">
-                <div>
-                    <div class="card-meta">Trend 01. 투명성 강화</div>
-                    <h3 class="card-title">정량적 요금 체계의 정착</h3>
-                    <p class="card-text">최근 소비 환경은 주대, 룸티, TC 등 각 요금 항목의 명확한 사전 고지를 요구합니다. 모호한 구두 계약 중심에서 시스템화된 정산 방식으로 이전하는 흐름이 뚜렷합니다.</p>
-                </div>
-            </div>
-            <div class="clip-card">
-                <div>
-                    <div class="card-meta">Trend 02. 업종 다변화</div>
-                    <h3 class="card-title">세분화된 서비스 포맷</h3>
-                    <p class="card-text">셔츠룸, 레깅스룸, 쩜오 등 업종별 고유의 서비스 방식이 고착화됨에 따라, 각 포맷에 따른 정산 규칙 및 연장 기준을 명확히 파악하는 것이 필수가 되었습니다.</p>
-                </div>
-            </div>
-            <div class="clip-card">
-                <div>
-                    <div class="card-meta">Trend 03. 안전 거래</div>
-                    <h3 class="card-title">디지털 기록의 일상화</h3>
-                    <p class="card-text">예약 내역과 문자 메시지 등 사전 조율된 거래 조건을 서면 및 디지털 형태로 남기는 문화가 정착하면서, 정산 관련 불일치 사례가 크게 감소하고 있습니다.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION 1: 투명화와 디지털화가 가져온 용어의 변화 -->
-        <section class="content-section">
-            <div class="section-header">
-                <h2>1. 투명화와 디지털화가 가져온 용어의 변화</h2>
-            </div>
-            <div class="section-body">
-                <p>최근 서울 중심의 유흥 소비 트렌드는 과거의 폐쇄적이고 불투명한 정산 방식에서 벗어나, 명확한 정량제와 디지털 정보 탐색을 기반으로 빠르게 재편되고 있습니다. 소비자들이 커뮤니티와 전문 분석 채널을 통해 사전에 정보를 획득함에 따라, 업계 전반에서도 '유흥 용어 정리'와 같은 명시적인 가이드라인의 필요성이 지속적으로 대두되고 있습니다. 특히 주대(술값), 룸티(방 대여료), TC(테이블 차지) 등의 핵심 요금 항목들이 사전 고지 항목으로 명확히 자리 잡으면서, 과거의 기형적인 추가 요금 청구 관행이나 정보의 비대칭성이 점차 개선되는 추세입니다.</p>
-                <p>이러한 변화는 단순히 이용 편의성을 높이는 데 그치지 않고, 정산 과정에서 발생할 수 있는 불필요한 마찰을 원천적으로 예방하는 긍정적인 구조적 합의로 이어지고 있습니다. 과거 업소의 재량에 과도하게 의존하던 정산 방식은 사라지고, 이제는 방문 전 공식 예약 채널이나 담당 실무자와의 서면 소통을 통해 세부 조건을 명문화하는 것이 표준적인 행동 지침으로 자리 잡았습니다. 이는 소비자의 예산 예측 가능성을 크게 높여주며, 업계 내부적으로도 신뢰도를 회복할 수 있는 건전한 기반을 형성하고 있습니다.</p>
-            </div>
-        </section>
-
-        <!-- SECTION 2: 업종별 세분화 현황 - 셔츠룸, 레깅스룸, 쩜오의 용어 체계 -->
-        <section class="content-section">
-            <div class="section-header">
-                <h2>2. 업종별 세분화 현황 및 요금 체계의 차이점</h2>
-            </div>
-            <div class="section-body">
-                <p>업종별로 고도로 세분화된 용어 체계는 소비자가 자신의 목적과 예산 범위 내에서 합리적인 선택을 내릴 수 있도록 돕는 실질적인 이정표 역할을 합니다. 예를 들어, 셔츠룸이나 레깅스룸과 같은 캐주얼 업종의 경우 정해진 시간제 요금과 규격화된 시스템 요금이 중심이 되어 직관적인 정산이 가능합니다. 반면, 쩜오나 텐프로 등 상위 세그먼트 업종에서는 시간 연장(연장 TC)이나 묶음(밴드) 단위의 복잡한 정산 방식이 적용되므로, 작동 방식을 오해할 경우 예상 범위를 벗어난 지출로 이어질 수 있습니다.</p>
-                <p>더불어 최근에는 각 업소마다 제공하는 주류의 종류나 기본 안주 세트 구성에 따라 주대 계산법이 다르게 적용되므로, 단순 총액 비교보다는 시간당 단가와 기본 포함 내역을 꼼꼼히 대조해 보아야 합니다. 특히 룸티가 기본 주대에 포함되어 있는지 혹은 시간마다 별도로 청구되는지 여부는 최종 청구 금액을 좌우하는 중대한 변수입니다. 업종별 고유의 용어 정의와 이에 따른 실제 청구 방식을 사전에 정확하게 학습해 두는 것은 불필요한 과다 청구를 방지하는 가장 확실한 자구책입니다.</p>
-            </div>
-        </section>
-
-        <!-- SECTION 3: 정산 및 사후 관리의 트렌드 - 사전 합의와 기록의 의무화 -->
-        <section class="content-section">
-            <div class="section-header">
-                <h2>3. 정산 및 사후 관리의 실무 트렌드</h2>
-            </div>
-            <div class="section-body">
-                <p>실제 정산 및 사후 관리 단계에서는 방문 인원, 시간대, 방문 목적에 따라 다르게 적용되는 구체적인 규칙을 체계적으로 숙지하여 대응해야 합니다. 1인 방문 시에는 최소 보증 요금(미니멈 차지)이 적용되는 경우가 많아 단체 방문 시보다 인당 단가가 상승할 수 있음을 인지해야 하며, 비즈니스 목적의 대규모 방문 시에는 사전에 견적을 확정받는 정액 요금제를 활용하는 것이 예산 초과를 방지하는 최선책입니다. 주말이나 피크 타임에는 대기 시간 및 추가 요금이 정산 방식에 영향을 미칠 수 있으므로, 조기 종료 시의 시간 비례 계산(프로레이타) 적용 여부 등을 사전에 확인해 두는 것이 권장됩니다.</p>
-                <p>이용 종료 후의 사후 기록 관리는 정산 신뢰성을 담보하는 가장 강력한 수단입니다. 결제 즉시 영수증 상의 세부 항목(주류 수량, 봉사료 비율, 부가세 포함 여부 등)을 현장에서 꼼꼼히 대조하고, 예약 시 수신한 문자 내역과 일치하는지 확인하는 습관이 요구됩니다. 이러한 데이터 기반의 철저한 대조 절차는 잘못 청구된 오류를 즉각적으로 교정할 뿐만 아니라, 장기적으로 안전하고 예측 가능한 이용 환경을 지속시키는 핵심적인 역할을 수행합니다.</p>
-            </div>
-        </section>
-
-        <!-- SECTION: FAQ (자주 묻는 질문) -->
-        <section class="faq-section">
-            <h2 class="grid-title">자주 묻는 질문 (FAQ)</h2>
+        <!-- FAQ Section -->
+        <section id="faq-section" class="faq-section">
+            <h2 class="section-title" style="margin-bottom: 40px;">자주 묻는 질문 (FAQ)</h2>
             
             <div class="faq-item">
-                <h3 class="faq-question">주대(술값) 외에 룸티와 TC는 각각 어떻게 구분되나요?</h3>
-                <div class="faq-answer">
-                    주대는 제공되는 주류와 안주류에 대한 비용이며, 룸티는 해당 공간을 사용하는 독립적인 시간당 또는 대여당 방 요금입니다. TC(Table Charge)는 접객 및 서비스 제공 인력에 대한 봉사료를 의미하며, 대개 시간 단위로 정산되므로 세 항목이 분리 청구되는지 패키지에 포함되어 있는지 사전에 확인하는 것이 중요합니다.
+                <input type="checkbox" id="faq-1" class="faq-trigger">
+                <label for="faq-1" class="faq-title">Q. 가라오케와 일반 룸의 가장 큰 차이는 무엇인가요?</label>
+                <div class="faq-content">
+                    가라오케는 주로 노래와 주류를 캐주얼하게 즐기는 개방적 혹은 세미 프라이빗 공간인 반면, 일반 룸 업종은 철저한 독립 공간 제공과 더불어 개인 맞춤형 밀착 에스코트 서비스가 포함되어 비용 구조(TC 등)에서 큰 차이가 납니다.
                 </div>
             </div>
 
             <div class="faq-item">
-                <h3 class="faq-question">시간제 업소에서 연장 요금은 어떻게 계산되나요?</h3>
-                <div class="faq-answer">
-                    시간제 업소의 연장은 일반적으로 정해진 시간 단위(예: 1시간 또는 90분)가 종료되기 10~15분 전에 연장 여부를 확인하며, 추가되는 시간에 맞춰 TC와 주대가 비례하여 누적 적용됩니다. 조기 종료 시에는 사전에 조기 퇴실 정산 기준을 합의하지 않았다면 남은 시간에 대한 환불이 어려울 수 있으므로 주의해야 합니다.
+                <input type="checkbox" id="faq-2" class="faq-trigger">
+                <label for="faq-2" class="faq-title">Q. 현장에서 추가 요금 폭탄을 피하려면 어떻게 해야 하나요?</label>
+                <div class="faq-content">
+                    예약 단계에서 세트 메뉴 구성 외에 시간 연장 비용, 스태프 봉사료, 세금 및 주종 변경에 따른 추가금이 발생하는지 구체적인 단가표를 요구하거나 문자로 확답을 받아두는 것이 가장 안전합니다.
                 </div>
             </div>
 
             <div class="faq-item">
-                <h3 class="faq-question">현금 정산과 카드 정산 시 요금 차이가 발생하는 이유는 무엇인가요?</h3>
-                <div class="faq-answer">
-                    일부 업소의 경우 결제 수단에 따라 세금 및 수수료 명목의 차액을 두는 경우가 있으나, 이는 사전에 명확히 고지되어야 합니다. 부가세(VAT)와 서비스 요금에 대한 법적 기준을 준수하는 투명한 업소의 경우 정산 방식에 따른 세부 명세서를 즉각 발행해 주므로, 결제 전에 최종 금액을 반드시 재확인하시는 것이 좋습니다.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">첫 방문 시 불이익을 피하기 위해 가장 먼저 확인해야 할 사항은 무엇인가요?</h3>
-                <div class="faq-answer">
-                    방문 직전 담당자에게 '기본 세트 외에 추가되는 비용이 전혀 없는지'를 담은 확인 메시지를 받아두는 것이 가장 안전합니다. 입장 시에도 담당 구좌나 실무자에게 사전 확인한 요금과 동일한 시스템인지 구두로 다시 한번 체크하여 상호 간의 오해를 미연에 방지하는 행동이 가장 효과적입니다.
+                <input type="checkbox" id="faq-3" class="faq-trigger">
+                <label for="faq-3" class="faq-title">Q. 비즈니스 바이어 접대 시 가장 적절한 업종 선택 기준은?</label>
+                <div class="faq-content">
+                    소음이 적고 대화에 집중할 수 있는 방음 설비가 우수한 멤버십 룸이 적절하며, 사전에 상대방의 주종 선호도와 종교적/문화적 성향을 파악하여 담당 실장에게 미리 세부 조율을 요청해 두는 것이 좋습니다.
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-info">
-                    <h4>INFO LOG</h4>
-                    <p>본 플랫폼은 서울 지역의 투명하고 건전한 소비 문화 정착을 위해 신뢰성 높은 산업 트렌드와 용어 정보를 제공하는 전문 정보 블로그입니다.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4 class="footer-brand">Dusk Journal</h4>
+                    <p class="footer-text">
+                        본 가이드는 투명하고 건강한 모임 문화 정착을 위해 업계 전반의 정보와 시스템 개념을 객관적으로 비교 분석하여 제공하는 정보성 블로그입니다. 비즈니스와 친목 모임 준비 시 불필요한 마찰과 예산 낭비를 방지하기 위한 실무적인 팁을 제안합니다.
+                    </p>
                 </div>
-                <div class="footer-links">
-                    <a href="/">홈</a>
-                    <a href="/trend">트렌드 분석</a>
+                <div>
+                    <h4 class="footer-brand" style="font-size: 1rem;">Quick Links</h4>
+                    <ul class="widget-list" style="font-size: 0.8rem;">
+                        <li><a href="https://ilsang-log.shop">홈으로 이동</a></li>
+                        <li><a href="#industry-comparison">업종별 비교표</a></li>
+                        <li><a href="#checklist-section">방문 전 체크리스트</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 INFO LOG. All Rights Reserved. 본 사이트의 콘텐츠는 정보 제공만을 목적으로 하며 무단 전재를 금합니다.</p>
+                <p>&copy; 2024 Dusk Journal. All rights reserved.</p>
+                <p>Designed for professional gathering managers.</p>
             </div>
         </div>
     </footer>
