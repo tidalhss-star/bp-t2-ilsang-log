@@ -3,410 +3,579 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>칼럼 — 방문 전 준비 목록: 모임 성격에 맞춘 업종별 용어 정리</title>
-    <meta name="description" content="비즈니스와 사교 모임을 준비하는 실무자를 위한 가이드. 룸싸롱, 텐프로, 가라오케, 마사지 등 다양한 업종의 모호한 용어와 시스템 개념을 투명하게 비교 정리합니다.">
-    <meta name="keywords" content="방문 전 준비 목록, 업종별 용어, 비즈니스 모임 준비, 가라오케 차이, 룸싸롱 개념">
+    <title>칼럼 — 방문 전 준비 목록: 상식을 뒤엎는 완벽한 준비의 핵심 프로토콜</title>
+    <meta name="description" content="성공적인 모임과 방문을 위해 준비 담당자가 반드시 챙겨야 할 필수 체크리스트. 연락 창구 일원화, 인원 변동 대비책, 정산 가이드를 프로의 시선으로 제시합니다.">
+    <meta name="keywords" content="방문 전 준비 목록, 사전 체크리스트, 모임 기획, 예약 실무, 총무 가이드">
     <link rel="canonical" href="https://ilsang-log.shop/column.html">
     
     <!-- 필수 메타 태그 -->
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-journal-dusk">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-clip-slate">
     
-    <!-- Open Graph / Twitter Card -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="방문 전 준비 목록 — 모임 성격에 맞춘 업종별 용어 정리">
-    <meta property="og:description" content="비즈니스와 사교 모임을 준비하는 실무자를 위한 가이드. 룸싸롱, 텐프로, 가라오케, 마사지 등 다양한 업종의 모호한 용어와 시스템 개념을 투명하게 비교 정리합니다.">
+    <meta property="og:title" content="방문 전 준비 목록 — 처음 방문자를 위한 조건별 선택 안내">
+    <meta property="og:description" content="성공적인 모임과 방문을 위해 준비 담당자가 반드시 챙겨야 할 필수 체크리스트.">
     <meta property="og:url" content="https://ilsang-log.shop/column.html">
     
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700;900&display=swap" rel="stylesheet">
+    
     <style>
-        /* CSS Reset & Variables (kr-journal-dusk) */
+        /* CSS Reset & Variables (brutalist-avantgarde + kr-clip-slate) */
         :root {
-            --bg-color: #121110;
-            --surface-color: #1c1a18;
-            --surface-hover: #262320;
-            --text-primary: #e8e3dc;
-            --text-secondary: #a8a095;
-            --accent-color: #d4af37;
-            --border-color: #2e2a26;
-            --font-serif: "Georgia", "Playfair Display", "ChosunGs", serif;
-            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --accent: #38bdf8;
+            --accent-dark: #0284c7;
+            --border-color: #f8fafc;
+            --border-width: 3px;
+            --clip-path-1: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+            --clip-path-2: polygon(0 0, 100% 4%, 100% 100%, 3% 96%);
+            --font-main: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
-            background-color: var(--bg-color);
+            background-color: var(--bg-primary);
             color: var(--text-primary);
-            font-family: var(--font-sans);
+            font-family: var(--font-main);
             line-height: 1.7;
-            letter-spacing: -0.02em;
-            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            word-break: keep-all;
         }
 
-        /* Hamburger Menu Pattern */
-        .menu-btn {
-            display: none;
-        }
-
-        .menu-icon {
-            display: block;
-            position: fixed;
-            top: 20px;
-            right: 20px;
+        /* Brutalist Layout Elements */
+        header {
+            border-bottom: var(--border-width) solid var(--border-color);
+            background-color: var(--bg-secondary);
+            position: sticky;
+            top: 0;
             z-index: 100;
-            cursor: pointer;
-            padding: 10px;
-            background: var(--surface-color);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
         }
 
-        .menu-icon span {
-            display: block;
-            width: 20px;
-            height: 2px;
-            background: var(--text-primary);
-            margin: 4px 0;
-            transition: 0.3s;
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            color: var(--accent);
+            text-decoration: none;
+            border: var(--border-width) solid var(--border-color);
+            padding: 0.5rem 1rem;
+            background: var(--bg-primary);
+            box-shadow: 5px 5px 0px var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .logo:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px var(--accent);
         }
 
         .nav-menu {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 280px;
-            height: 100vh;
-            background: var(--surface-color);
-            z-index: 99;
-            transition: 0.4s ease-in-out;
-            padding: 80px 30px;
-            border-left: 1px solid var(--border-color);
-            box-shadow: -5px 0 15px rgba(0,0,0,0.5);
-        }
-
-        .nav-menu a {
-            display: block;
-            color: var(--text-primary);
-            text-decoration: none;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-
-        .nav-menu a:hover {
-            color: var(--accent-color);
-        }
-
-        .menu-btn:checked ~ .nav-menu {
-            right: 0;
-        }
-
-        .menu-btn:checked ~ .menu-icon span:nth-child(1) {
-            transform: rotate(-45deg) translate(-4px, 4px);
-        }
-
-        .menu-btn:checked ~ .menu-icon span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .menu-btn:checked ~ .menu-icon span:nth-child(3) {
-            transform: rotate(45deg) translate(-4px, -4px);
-        }
-
-        /* Container & Layout */
-        .n-img-pg3y {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Header Style (Date Journal) */
-        .k-list-t0ik-block {
-            text-align: center;
-            padding: 80px 20px 60px 20px;
-            border-bottom: 1px solid var(--border-color);
-            margin-bottom: 60px;
-        }
-
-        .k-list-t0ik-title {
-            font-family: var(--font-serif);
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 15px;
-            transform: rotate(-1deg);
-            display: inline-block;
-        }
-
-        .k-list-t0ik-title span {
-            color: var(--accent-color);
-        }
-
-        .k-list-t0ik-sub {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            font-style: italic;
-            margin-top: 10px;
-        }
-
-        /* Editorial Content */
-        .editorial-wrapper {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 50px;
-        }
-
-        @media (max-width: 868px) {
-            .editorial-wrapper {
-                grid-template-columns: 1fr;
-            }
-            .k-list-t0ik-title {
-                font-size: 2.2rem;
-            }
-        }
-
-        .main-content article {
-            margin-bottom: 50px;
-        }
-
-        .main-content h2 {
-            font-family: var(--font-serif);
-            font-size: 1.8rem;
-            color: var(--accent-color);
-            margin-bottom: 20px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .main-content p {
-            font-size: 1.05rem;
-            color: var(--text-primary);
-            margin-bottom: 25px;
-            text-align: justify;
-        }
-
-        /* Sidebar Styling */
-        .sidebar {
-            background: var(--surface-color);
-            padding: 30px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            height: fit-content;
-        }
-
-        .sidebar h3 {
-            font-family: var(--font-serif);
-            font-size: 1.3rem;
-            color: var(--text-primary);
-            margin-bottom: 20px;
-            border-left: 3px solid var(--accent-color);
-            padding-left: 10px;
-        }
-
-        .sidebar ul {
+            display: flex;
+            gap: 1.5rem;
             list-style: none;
         }
 
-        .sidebar li {
-            margin-bottom: 15px;
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            border-bottom: 1px dashed var(--border-color);
-            padding-bottom: 10px;
-        }
-
-        .sidebar li strong {
+        .nav-link {
             color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border: var(--border-width) dashed transparent;
+            transition: all 0.2s ease;
+        }
+
+        .nav-link:hover {
+            border-color: var(--accent);
+            background-color: rgba(56, 189, 248, 0.1);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 6rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-bottom: var(--border-width) solid var(--border-color);
+        }
+
+        .hero-badge {
+            background-color: var(--accent);
+            color: var(--bg-primary);
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            transform: rotate(-1.5deg);
+            border: var(--border-width) solid var(--border-color);
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -3px;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+
+        .hero-title span {
+            color: var(--accent);
             display: block;
-            margin-bottom: 3px;
         }
 
-        /* FAQ Section */
-        .faq-section {
-            margin-top: 80px;
-            padding-top: 60px;
-            border-top: 1px solid var(--border-color);
+        .hero-meta {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            border-left: 5px solid var(--accent);
+            padding-left: 1.5rem;
         }
 
-        .faq-section h2 {
-            font-family: var(--font-serif);
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 40px;
-            color: var(--accent-color);
-        }
-
-        .faq-grid {
+        /* Grid Layout (Clip Grid Concept) */
+        .content-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
+            grid-template-cols: 2fr 1fr;
+            gap: 3rem;
         }
 
-        @media (max-width: 768px) {
-            .faq-grid {
-                grid-template-columns: 1fr;
+        @media (max-width: 992px) {
+            .content-grid {
+                grid-template-cols: 1fr;
             }
         }
 
-        .faq-item {
-            background: var(--surface-color);
-            padding: 25px;
-            border-radius: 6px;
-            border: 1px solid var(--border-color);
+        /* Column Content */
+        .column-body {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
         }
 
-        .faq-item h4 {
+        .column-section {
+            background-color: var(--bg-secondary);
+            border: var(--border-width) solid var(--border-color);
+            padding: 3rem;
+            position: relative;
+            box-shadow: 10px 10px 0px var(--border-color);
+        }
+
+        .column-section::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 1px dashed rgba(248, 252, 252, 0.2);
+            pointer-events: none;
+        }
+
+        .section-tag {
+            font-size: 0.9rem;
+            font-weight: 900;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .paragraph {
             font-size: 1.1rem;
-            color: var(--accent-color);
-            margin-bottom: 12px;
-            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            text-align: justify;
         }
 
-        .faq-item p {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
+        .paragraph strong {
+            color: var(--text-primary);
+            background: linear-gradient(180deg, transparent 60%, var(--accent-dark) 40%);
+        }
+
+        /* Callout Box within Column */
+        .opinion-box {
+            background-color: var(--bg-primary);
+            border: var(--border-width) solid var(--accent);
+            padding: 2rem;
+            margin: 2rem 0;
+            clip-path: var(--clip-path-1);
+        }
+
+        .opinion-title {
+            font-weight: 900;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        /* Sidebar Elements */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .sidebar-card {
+            background-color: var(--bg-secondary);
+            border: var(--border-width) solid var(--border-color);
+            padding: 2rem;
+            box-shadow: 6px 6px 0px var(--accent);
+        }
+
+        .sidebar-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .sidebar-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .sidebar-item {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px dashed var(--text-secondary);
+            padding-bottom: 0.8rem;
+        }
+
+        .sidebar-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-label {
+            font-size: 0.85rem;
+            font-weight: 900;
+            color: var(--accent);
+            text-transform: uppercase;
+        }
+
+        .item-text {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-top: 0.2rem;
         }
 
         /* Footer */
         footer {
-            margin-top: 100px;
-            padding: 40px 20px;
-            border-top: 1px solid var(--border-color);
-            text-align: center;
+            background-color: var(--bg-secondary);
+            border-top: var(--border-width) solid var(--border-color);
+            padding: 4rem 1.5rem;
+            margin-top: 6rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-cols: 1fr 2fr;
+            gap: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-cols: 1fr;
+            }
+        }
+
+        .footer-brand {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--text-primary);
+        }
+
+        .footer-desc {
             color: var(--text-secondary);
+            margin-top: 1rem;
+            max-width: 400px;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-cols: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-group-title {
+            font-weight: 900;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .footer-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .footer-link:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        .footer-copy {
+            grid-column: 1 / -1;
+            border-top: 1px solid var(--text-secondary);
+            padding-top: 2rem;
+            margin-top: 2rem;
+            text-align: center;
             font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Accessibility / Responsive Trigger */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: var(--border-width) solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Hamburger Menu Pattern -->
-    <input type="checkbox" id="menu-toggle" class="menu-btn">
-    <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    
-    <nav class="nav-menu">
-        <a href="https://ilsang-log.shop">홈으로</a>
-        <a href="#intro">인사말</a>
-        <a href="#comparison">업종별 비교</a>
-        <a href="#checklist">방문 전 준비 목록</a>
-        <a href="#faq">자주 묻는 질문</a>
-    </nav>
+    <!-- Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="https://ilsang-log.shop/" class="logo">ILSANG-LOG</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="https://ilsang-log.shop/" class="nav-link">홈으로</a></li>
+                    <li><a href="#column" class="nav-link">칼럼 읽기</a></li>
+                    <li><a href="#checklist" class="nav-link">체크리스트</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="메뉴 열기">MENU</button>
+            </nav>
+        </div>
+    </header>
 
-    <div class="n-img-pg3y">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <span class="hero-badge">CRITICAL COLUMN</span>
+        <h1 class="hero-title">
+            방문 전 준비 목록: 
+            <span>실패하지 않는 실무적 통찰</span>
+        </h1>
+        <p class="hero-meta">
+            단순히 메모장에 적어두는 체크리스트는 작동하지 않습니다. 인원 변동의 변수, 시점별 타임라인 통제, 그리고 단일화된 소통 채널이 결합되어야만 비로소 완벽한 방문 계획이 완성됩니다. 현업 실무자의 관점에서 기존 상식을 완전히 뒤엎는 실무 프로토콜을 제시합니다.
+        </p>
+    </section>
+
+    <!-- Main Content Area (Clip Grid Layout) -->
+    <main class="content-grid" id="column">
         
-        <!-- Header Style -->
-        <header class="k-list-t0ik-block">
-            <h1 class="k-list-t0ik-title">방문 전 <span>준비 목록</span></h1>
-            <p class="k-list-t0ik-sub">실무자를 위한 비즈니스 모임과 사교 공간의 명확한 가이드</p>
-        </header>
-
-        <!-- Main Layout Wrapper -->
-        <div class="editorial-wrapper">
+        <!-- Left Column: Column Body -->
+        <article class="column-body">
             
-            <!-- Left Side: Main Content -->
-            <main class="main-content">
-                
-                <article id="intro">
-                    <h2>중요한 모임을 앞둔 실무자의 남모를 고민</h2>
-                    <p>
-                        비즈니스 미팅이나 특별한 사교 모임을 주선해야 하는 실무자라면 누구나 한 번쯤은 장소 선정과 시스템 이해 부족으로 식은땀을 흘려본 경험이 있을 겁니다. 인터넷에 떠도는 정보들은 파편화되어 있고, 정작 현업에서 쓰이는 용어들은 모호하기 짝이 없죠. 도대체 룸싸롱과 가라오케는 구체적으로 어떤 운영상 차이가 있는지, 텐프로나 전문 마사지 업소의 시스템은 어떻게 작동하는지 명확히 짚어주는 곳이 없어 혼란스러우셨을 텐데요.
+            <!-- Section 1: The Myth of Checklists -->
+            <section class="column-section">
+                <span class="section-tag">CHAPTER 01</span>
+                <h2 class="section-title">리스트만 나열하는 계획이 매번 무너지는 이유</h2>
+                <p class="paragraph">
+                    대부분의 준비 담당자들은 방문이나 모임을 기획할 때 단순한 항목 나열식의 체크리스트에 의존합니다. 하지만 <strong>실무 현장에서 이러한 정적인 목록은 아무런 효력을 발휘하지 못하는 경우가 다반사입니다.</strong> 약속 장소의 상황, 갑작스러운 기상 변화, 혹은 참석자들의 돌발 행동은 리스트에 적힌 단순한 항목들만으로는 제어할 수 없기 때문입니다. 진짜 준비란 발생 가능한 시나리오를 예측하고, 이에 유연하게 대처할 수 있는 동적 구조를 만드는 것입니다.
+                </p>
+                <p class="paragraph">
+                    우리는 흔히 예약 시간과 인원수만 확정되면 모든 준비가 끝났다고 착각합니다. 하지만 실제로는 예약 이후부터 실제 방문에 이르는 시간 동안 수많은 변수들이 개입합니다. 진정한 프로의 기획은 체크리스트의 항목을 늘리는 것이 아니라, 각 항목 간의 연결고리를 이해하고 위기 상황에서의 백업 플랜(Backup Plan)을 사전에 정의하는 데서 출발합니다.
+                </p>
+                <div class="opinion-box">
+                    <h3 class="opinion-title">Direct Opinion</h3>
+                    <p class="paragraph" style="margin-bottom: 0; font-size: 1rem;">
+                        "체크리스트는 할 일을 적어두는 메모장이 아닙니다. 그것은 방문 당일 발생할 수 있는 리스크를 사전에 차단하기 위한 일종의 방어 시스템이어야 합니다."
                     </p>
-                    <p>
-                        이번 칼럼에서는 이러한 불투명성을 걷어내고 실무자가 현장에서 당황하지 않도록 완벽하게 정리된 가이드를 제공하고자 합니다. 모임의 목적과 참석자의 성향에 맞는 올바른 업종 선택부터, 예산 낭비를 막기 위한 구체적인 확인 사항까지 꼼꼼하게 다뤄볼게요. 이 글을 읽고 나시면 어떤 성격의 모임이든 자신감 있게 어레인지하실 수 있을 겁니다.
-                    </p>
-                </article>
+                </div>
+            </section>
 
-                <article id="comparison">
-                    <h2>모호한 업종별 개념과 시스템의 실체</h2>
-                    <p>
-                        가장 먼저 짚고 넘어가야 할 것은 각 업종의 정체성과 비용 정산 시스템의 명확한 차이입니다. 흔히 가라오케는 비교적 대중적이고 캐주얼한 분위기로, 시간당 룸 이용료와 주류 비용이 투명하게 정해져 있는 편입니다. 가벼운 친목 도모나 소규모 단합 대회에 적합하며, 누구나 부담 없이 가창과 음주를 함께 즐길 수 있다는 장점이 있지요.
-                    </p>
-                    <p>
-                        반면, 룸싸롱이나 텐프로로 대변되는 고급 사교 공간은 완벽한 프라이버시 보장과 고도의 밀착 서비스를 제공합니다. 이곳은 단순한 주류 제공을 넘어, 참석한 내빈들의 성향에 맞춘 세심한 의전이 수반되므로 기본 테이블 세팅비와 봉사료(T/C)가 별도로 책정되는 경우가 대부분입니다. 마사지 업소 역시 단순 피로 해소 목적의 테라피 전문점인지, 혹은 비즈니스 고객을 위한 프라이빗 힐링 공간인지에 따라 예약 경로와 세입 조건이 완전히 달라지므로 사전 구분이 필수적입니다.
-                    </p>
-                </article>
+            <!-- Section 2: Headcount Contingency -->
+            <section class="column-section">
+                <span class="section-tag">CHAPTER 02</span>
+                <h2 class="section-title">인원 변동성 통제: 확정이 아닌 '범위'로 관리하라</h2>
+                <p class="paragraph">
+                    방문 전 준비 목록에서 가장 큰 구멍이 생기는 지점은 바로 '인원 확정' 단계입니다. 대부분의 총무나 담당자들은 "최종 인원은 몇 명입니다"라는 선언적 수치에만 집착합니다. 그러나 당일 불참자(No-show)나 갑작스러운 동행인의 추가는 언제나 발생합니다. 따라서 <strong>인원은 단일 숫자가 아닌 '최소-최대 범위(Range)'로 관리하는 것이 핵심입니다.</strong>
+                </p>
+                <p class="paragraph">
+                    예컨대 10명의 모임을 준비한다면, 공간의 물리적 수용 한계가 최소 8명에서 최대 12명까지 유연하게 대처 가능한지 방문지에 미리 확인해야 합니다. 이러한 범위 설정이 선행되지 않으면 당일 발생한 단 한 명의 변동으로 인해 전체 테이블 배치가 무너지거나, 최악의 경우 입장이 거부되는 불상사를 겪게 됩니다. 사전에 약속된 인원의 상한선과 하한선을 명확히 정의하는 것, 이것이 예측 불가능한 인원 변동에 대처하는 유일한 해법입니다.
+                </p>
+            </section>
 
-                <article id="checklist">
-                    <h2>방문 전 체크리스트: 실무자가 챙겨야 할 3가지</h2>
-                    <p>
-                        첫째, '총액 기준(TCO)의 예산 수립'이 가장 중요합니다. 현장에서 흔히 발생하는 불상사 중 하나는 초기 안내받은 기본 주류 비용 외에 봉사료, 룸 사용 연장비, 추가 안주 비용 등이 덧붙여져 예산을 초과하는 일입니다. 예약 단계에서 담당 매니저에게 모든 부대비용이 포함된 최종 예상 견적을 명확히 확인하고, 서면이나 메시지 기록으로 남겨두는 편이 안전합니다.
-                    </p>
-                    <p>
-                        둘째, '참석자 성향에 맞춘 드레스코드와 에티켓 공유'입니다. 비즈니스 파트너나 VIP를 모시는 자리라면 지나치게 캐주얼한 복장보다는 격식 있는 세미 비즈니스 캐주얼을 권장해야 합니다. 업장의 분위기와 맞지 않는 지나친 캐주얼 복장은 모임 전체의 무게감을 떨어뜨릴 수 있거든요. 셋째, '예약 시간과 인원 변동의 즉각적인 소통'입니다. 프라이빗 업소들은 타이트한 예약 세션으로 운영되기 때문에 10~20분의 지각이 서비스 질 하락으로 이어질 수 있으니 주의해야 합니다.
-                    </p>
-                </article>
+            <!-- Section 3: The Timeline Dictator -->
+            <section class="column-section">
+                <span class="section-tag">CHAPTER 03</span>
+                <h2 class="section-title">시간대별 통제 프로토콜: D-7부터 D-Hour까지</h2>
+                <p class="paragraph">
+                    시간을 지배하지 못하는 준비는 실패할 수밖에 없습니다. 완벽한 방문을 위해서는 시점별로 명확한 액션 플랜이 작동해야 합니다. <strong>방문 7일 전(D-7)에는 공간의 제약 사항과 예약 규정(취소 수수료 등)을 최종 재검토해야 하며, 3일 전(D-3)에는 참석자들에게 최종 리마인드와 함께 교통편 및 주차 정보를 송부해야 합니다.</strong> 이 시기를 놓치면 참석자들은 당일에 허둥대기 시작하고, 이는 고스란히 전체 일정의 지연으로 이어집니다.
+                </p>
+                <p class="paragraph">
+                    가장 중요한 것은 방문 직전(D-Hour)의 대응입니다. 방문 1시간 전에는 현장 담당자와의 연락망이 정상 작동하는지 확인하고, 선발대가 먼저 도착하여 현장 컨디션을 체크하는 구조를 만들어야 합니다. 단순히 제시간에 맞춰 모이는 것이 목적이 아니라, 모임의 첫인상을 결정하는 최초 10분의 경험을 완벽하게 설계하는 것이 시간대별 프로토콜의 진짜 목적입니다.
+                </p>
+            </section>
 
-                <article>
-                    <h2>돌발 상황 대처법과 스마트한 매너</h2>
-                    <p>
-                        아무리 철저하게 준비해도 현장에서는 늘 예상치 못한 변수가 생기기 마련입니다. 술자리가 길어지면서 예산 범위를 넘어서는 추가 주문이 발생할 조짐이 보인다면, 주저하지 말고 담당 부장이나 매니저를 조용히 불러 한도를 설정해 두는 지혜가 필요합니다. "오늘 예산은 여기까지니 추가 주문 시 저에게 미리 확인해 주세요"라고 부드럽게 언질을 주면 자연스럽게 지출을 조율할 수 있습니다.
-                    </p>
-                    <p>
-                        또한, 비즈니스 대화의 흐름이 끊기거나 어색한 침묵이 흐를 때를 대비하여 가벼운 아이스브레이킹 주제나 최근 업계 트렌드 에피소드를 2~3개쯤 머릿속에 담아두는 것도 훌륭한 실무자의 역량입니다. 과도한 음주로 인해 모임의 본질을 흐리지 않도록 페이스를 조절하는 배려 역시 잊지 말아야 할 핵심 요소랍니다.
-                    </p>
-                </article>
+            <!-- Section 4: Single Point of Contact -->
+            <section class="column-section">
+                <span class="section-tag">CHAPTER 04</span>
+                <h2 class="section-title">소통의 단일화: 소음과 왜곡을 차단하는 기술</h2>
+                <p class="paragraph">
+                    방문 준비 과정에서 발생하는 소통의 혼선은 대부분 연락 창구가 다원화되어 있을 때 발생합니다. 참석자 중 누군가는 현장에 직접 전화를 걸어 예약을 변경하려 하고, 또 다른 누군가는 메신저를 통해 개별 요구사항을 전달합니다. 이러한 무질서한 소통은 정보의 왜곡을 낳고 결국 현장에서 아수라장을 만듭니다. <strong>모든 소통 창구는 단 한 명의 '책임 담당자(SPOC)'로 일원화되어야만 합니다.</strong>
+                </p>
+                <p class="paragraph">
+                    현장 업체와의 조율 역시 오직 이 책임 담당자를 통해서만 이루어져야 합니다. 단일화된 창구는 불필요한 중복 문의를 방지하고, 합의된 사항만을 명확하게 현장에 전달함으로써 신뢰도를 높입니다. 정보의 흐름을 단순하고 투명하게 유지하는 것만으로도 준비 과정에서 발생하는 스트레스의 80% 이상을 줄일 수 있습니다.
+                </p>
+            </section>
 
-            </main>
+        </article>
 
-            <!-- Right Side: Sidebar Checklist -->
-            <aside class="sidebar">
-                <h3>시점별 체크리스트</h3>
-                <ul>
-                    <li>
-                        <strong>D-3: 업장 선정 및 견적 조율</strong>
-                        모임 성격에 맞는 업종(가라오케 vs 프라이빗 룸)을 선택하고, 봉사료와 추가 비용이 포함된 총액 견적을 조율합니다.
+        <!-- Right Column: Sidebar (Clip Grid Info) -->
+        <aside class="sidebar" id="checklist">
+            
+            <!-- Sidebar Card 1: 핵심 요약 -->
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">실무 검증 기준</h3>
+                <ul class="sidebar-list">
+                    <li class="sidebar-item">
+                        <span class="item-label">인원 통제</span>
+                        <span class="item-text">확정 인원의 ±20% 범위 수용성 확보</span>
                     </li>
-                    <li>
-                        <strong>D-1: 게스트 성향 최종 확인</strong>
-                        게스트의 선호 주종, 알레르기 유무를 파악하여 예약 담당자에게 미리 전달하고 룸 위치를 재확인합니다.
+                    <li class="sidebar-item">
+                        <span class="item-label">시점 통제</span>
+                        <span class="item-text">D-7 규정 검토, D-3 리마인드, D-1 최종 확인</span>
                     </li>
-                    <li>
-                        <strong>D-Day: 예약 시간 엄수 및 의전</strong>
-                        약속 시간보다 15분 먼저 도착하여 룸 컨디션을 확인하고, 담당 직원과의 사전 미팅을 통해 결제 방식을 세팅합니다.
+                    <li class="sidebar-item">
+                        <span class="item-label">소통 통제</span>
+                        <span class="item-text">현장 연락 담당자 일원화 (SPOC 운영)</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <span class="item-label">정산 통제</span>
+                        <span class="item-text">사전 예약금 및 현장 결제 수단 이중 체크</span>
                     </li>
                 </ul>
-            </aside>
+            </div>
 
-        </div>
+            <!-- Sidebar Card 2: 경고문구 -->
+            <div class="sidebar-card" style="border-color: var(--accent); background-color: var(--bg-primary);">
+                <h3 class="sidebar-title" style="color: var(--accent);">ATTENTION</h3>
+                <p class="paragraph" style="font-size: 0.95rem; margin-bottom: 0;">
+                    당일 현장에서의 임기응변은 준비 부족에 대한 변명일 뿐입니다. 완벽한 방문과 모임은 철저히 계산된 동선과 변수 차단 시나리오 위에서만 작동합니다. 지금 당신의 준비 목록을 다시 점검하십시오.
+                </p>
+            </div>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="faq-section">
-            <h2>자주 묻는 질문 (FAQ)</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4>Q. 룸싸롱과 가라오케의 가장 큰 예산 차이는 무엇인가요?</h4>
-                    <p>가라오케는 주로 시간당 룸비와 주문한 주류 세트 단위로 정산되어 예산 예측이 쉽습니다. 반면 룸싸롱 등 고급 업소는 인원수별 봉사료(T/C)와 웨이터 팁, 기본 세팅비가 별도로 추가되므로 사전 조율이 없으면 예산 초과 가능성이 높습니다.</p>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">ILSANG-LOG</div>
+                <p class="footer-desc">
+                    체무적이고 날카로운 관점으로 일상의 모든 준비와 기획의 표준을 제시합니다. 타협 없는 완벽함을 지향합니다.
+                </p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4 class="footer-group-title">Navigation</h4>
+                    <ul class="footer-list">
+                        <li><a href="https://ilsang-log.shop/" class="footer-link">홈으로 돌아가기</a></li>
+                        <li><a href="#column" class="footer-link">칼럼 본문</a></li>
+                        <li><a href="#checklist" class="footer-link">사전 체크리스트</a></li>
+                    </ul>
                 </div>
-                <div class="faq-item">
-                    <h4>Q. 예약 시 구두 약속 외에 기록을 남겨야 하나요?</h4>
-                    <p>네, 반드시 필요합니다. 예약 통화 후 문자 메시지나 카카오톡을 통해 합의된 주류 구성, 이용 시간, 봉사료 포함 여부 등을 요약하여 담당자에게 확인 답장을 받아두는 것이 현장 분쟁을 예방하는 가장 확실한 방법입니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Q. 게스트가 갑자기 추가될 경우 어떻게 대처하나요?</h4>
-                    <p>인원 추가 즉시 업장 담당자에게 연락하여 사용 중인 룸의 수용 가능 여부를 파악해야 합니다. 공간이 협소할 경우 현장에서 즉시 더 큰 룸으로 이동을 요청해야 대화의 쾌적함을 유지할 수 있습니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Q. 비즈니스 접대 시 결제 타이밍은 언제가 좋은가요?</h4>
-                    <p>모임이 끝나기 약 30분 전, 게스트가 자리를 비우거나 대화에 집중하고 있을 때 조용히 나와 카운터에서 정산을 마치는 것이 가장 매끄럽습니다. 게스트 앞에서 영수증을 확인하는 모습을 보이지 않는 것이 예의입니다.</p>
+                <div>
+                    <h4 class="footer-group-title">Policy</h4>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">이용약관</a></li>
+                        <li><a href="#" class="footer-link">개인정보처리방침</a></li>
+                        <li><a href="#" class="footer-link">책임의 한계</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
+            <div class="footer-copy">
+                &copy; ILSANG-LOG. All Rights Reserved. 본 페이지의 모든 콘텐츠는 무단 복제 및 배포를 금지합니다.
+            </div>
+        </div>
+    </footer>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; ilsang-log.shop. All Rights Reserved. 본 가이드는 투명한 모임 문화와 실무자들의 편의를 위해 작성되었습니다.</p>
-        </footer>
+    <script>
+        // Hamburger Menu Logic (Simple for Responsive)
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
 
-    </div>
-
+        toggleBtn.addEventListener('click', () => {
+            if (navMenu.style.display === 'flex') {
+                navMenu.style.display = 'none';
+            } else {
+                navMenu.style.display = 'flex';
+                navMenu.style.flexDirection = 'column';
+                navMenu.style.position = 'absolute';
+                navMenu.style.top = '100%';
+                navMenu.style.left = '0';
+                navMenu.style.width = '100%';
+                navMenu.style.backgroundColor = 'var(--bg-secondary)';
+                navMenu.style.borderBottom = 'var(--border-width) solid var(--border-color)';
+                navMenu.style.padding = '1.5rem';
+            }
+        });
+    </script>
 </body>
 </html>
