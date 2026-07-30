@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[서울 방문 전 준비 목록]]></title>
+  <title><![CDATA[정보 블로그]]></title>
   <link>https://ilsang-log.shop</link>
-  <description><![CDATA[서울 정보 블로그 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Wed, 29 Jul 2026 11:35:30 GMT</pubDate>
-  <lastBuildDate>Wed, 29 Jul 2026 11:35:30 GMT</lastBuildDate>
+  <description><![CDATA[정보 블로그 - 방문 전 준비 목록 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Thu, 30 Jul 2026 08:49:01 GMT</pubDate>
+  <lastBuildDate>Thu, 30 Jul 2026 08:49:01 GMT</lastBuildDate>
   <atom:link href="https://ilsang-log.shop/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[서울 방문 전 준비 목록 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://ilsang-log.shop/</link>
-      <guid isPermaLink="true">https://ilsang-log.shop/</guid>
-      <description><![CDATA[서울 정보 블로그 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Wed, 29 Jul 2026 11:35:30 GMT</pubDate>
+      <title><![CDATA[중고 거래 전에 이 인솔 로고 하나 봤어야 했는데, 300 날린 썰 푼다]]></title>
+      <link>https://ilsang-log.shop/posts/qa-001-baxufx.html</link>
+      <guid isPermaLink="true">https://ilsang-log.shop/posts/qa-001-baxufx.html</guid>
+      <description><![CDATA[2023년 10월 리스탁 물량의 아식스 젤 카야노 14 OG 아이보리, 인솔 프린트가 달라졌다는 얘기 들었을 때만 해도 그냥 흘려들었습니다. 뭐 대수냐 싶었죠. 그런데 지난주에 이거 하나 때문에 중고 거래에서 270만 원짜리 가품을 진품으로 잘못 매입할 뻔한 사건을 겪]]></description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>

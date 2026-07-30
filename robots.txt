@@ -2,4 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ilsang-log.shop/sitemap.xml
+Sitemap: https://ilsang-log.shop/sitemap-pages.xml
 Sitemap: https://ilsang-log.shop/sitemap-index.xml
