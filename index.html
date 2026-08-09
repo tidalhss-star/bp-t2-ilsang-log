@@ -1,834 +1,832 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>방문 전 준비 목록 — 처음 방문자를 위한 조건별 선택 안내</title>
-    <meta name="description" content="성공적인 모임과 방문을 위해 준비 담당자가 반드시 챙겨야 할 필수 체크리스트. 연락 창구 일원화, 인원 변동 대비책, 정산 가이드를 프로의 시선으로 제시합니다.">
-    <meta name="keywords" content="방문 전 준비 목록, 사전 체크리스트, 모임 기획, 예약 실무, 총무 가이드">
-    <link rel="canonical" href="https://ilsang-log.shop/">
-    
-    <!-- 필수 메타 태그 -->
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-clip-slate">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="방문 전 준비 목록 — 처음 방문자를 위한 조건별 선택 안내">
-    <meta property="og:description" content="성공적인 모임과 방문을 위해 준비 담당자가 반드시 챙겨야 할 필수 체크리스트.">
-    <meta property="og:url" content="https://ilsang-log.shop/">
-    <meta property="og:image" content="https://ilsang-log.shop/og-image.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="방문 전 준비 목록 — 처음 방문자를 위한 조건별 선택 안내">
-    <meta name="twitter:description" content="성공적인 모임과 방문을 위해 준비 담당자가 반드시 챙겨야 할 필수 체크리스트.">
-
-    <style>
-        /* CSS Reset & Variables */
-        :root {
-            --primary: #15140f;
-            --secondary: #e8e6e1;
-            --accent: #2f6f52;
-            --font-family: ui-sans-serif, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-            --font-mono: 'Courier New', Courier, monospace;
-            --border-radius: 8px;
-            --box-shadow: 0 1px 3px rgba(0,0,0,0.01), 0 1px 2px rgba(0,0,0,0.005);
-            --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: var(--primary);
-            color: var(--secondary);
-            font-family: var(--font-family);
-            line-height: 1.6;
-            overflow-x: hidden;
-            letter-spacing: -0.02em;
-        }
-
-        /* Glassmorphism Common Style */
-        .n-hero-o562 {
-            background: rgba(232, 230, 225, 0.03);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(232, 230, 225, 0.08);
-            border-radius: var(--border-radius);
-        }
-
-        /* Navigation Style */
-        .t-ico-intz-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 16px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: var(--transition);
-        }
-
-        .t-hero-8sip {
-            font-family: var(--font-mono);
-            font-weight: 700;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--secondary);
-            text-decoration: none;
-        }
-
-        .t-hero-8sip span {
-            color: var(--accent);
-        }
-
-        /* Hamburger Menu Trigger */
-        .q-btn-upbm-btn {
-            display: none;
-        }
-
-        .q-btn-upbm-icon {
-            cursor: pointer;
-            padding: 8px;
-            z-index: 1002;
-            position: relative;
-        }
-
-        .q-btn-upbm-icon-line {
-            display: block;
-            width: 24px;
-            height: 1px;
-            background: var(--secondary);
-            margin: 6px 0;
-            transition: var(--transition);
-        }
-
-        /* Overlay Menu */
-        .t-ico-intz-overlay {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 100%;
-            height: 100vh;
-            background: var(--primary);
-            z-index: 1001;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: var(--transition);
-        }
-
-        .q-btn-upbm-btn:checked ~ .t-ico-intz-overlay {
-            right: 0;
-        }
-
-        .q-btn-upbm-btn:checked ~ .q-btn-upbm-icon .q-btn-upbm-icon-line:nth-child(1) {
-            transform: translateY(7px) rotate(45deg);
-        }
-
-        .q-btn-upbm-btn:checked ~ .q-btn-upbm-icon .q-btn-upbm-icon-line:nth-child(2) {
-            opacity: 0;
-        }
-
-        .q-btn-upbm-btn:checked ~ .q-btn-upbm-icon .q-btn-upbm-icon-line:nth-child(3) {
-            transform: translateY(-7px) rotate(-45deg);
-        }
-
-        .t-ico-intz-links {
-            list-style: none;
-            text-align: center;
-        }
-
-        .t-ico-intz-links li {
-            margin: 24px 0;
-        }
-
-        .t-ico-intz-links a {
-            font-size: 1.8rem;
-            color: var(--secondary);
-            text-decoration: none;
-            font-weight: 300;
-            transition: var(--transition);
-            letter-spacing: 0.05em;
-        }
-
-        .t-ico-intz-links a:hover {
-            color: var(--accent);
-            padding-left: 8px;
-        }
-
-        /* Full Screen Hero Section */
-        .x-btn-75zw {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 120px 10%;
-            position: relative;
-            border-bottom: 1px solid rgba(232, 230, 225, 0.1);
-        }
-
-        .x-btn-75zw-meta {
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            color: var(--accent);
-            margin-bottom: 24px;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-        }
-
-        .x-btn-75zw-title-container {
-            transform: rotate(-1deg);
-            margin-bottom: 32px;
-            display: inline-block;
-        }
-
-        .x-btn-75zw-title {
-            font-size: clamp(2.5rem, 6vw, 4.5rem);
-            font-weight: 800;
-            line-height: 1.1;
-            color: var(--secondary);
-            position: relative;
-        }
-
-        .x-btn-75zw-underline {
-            width: 100%;
-            height: 4px;
-            background: transparent;
-            border-bottom: 3px dashed var(--accent);
-            margin-top: 12px;
-            transform: rotate(0.5deg);
-        }
-
-        .x-btn-75zw-description {
-            font-size: clamp(1.1rem, 2vw, 1.4rem);
-            max-width: 680px;
-            color: rgba(232, 230, 225, 0.7);
-            font-weight: 300;
-            margin-bottom: 40px;
-        }
-
-        /* Main Layout Grid */
-        .x-box-jiet-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 120px 24px;
-        }
-
-        /* Asymmetric Layout Rows & Content Blocks */
-        .k-body-711s-intro {
-            margin-bottom: 80px;
-            max-width: 800px;
-        }
-
-        .k-body-711s-intro h2 {
-            font-size: 2rem;
-            margin-bottom: 24px;
-            color: var(--secondary);
-            font-weight: 700;
-        }
-
-        .k-body-711s-intro p {
-            font-size: 1.1rem;
-            color: rgba(232, 230, 225, 0.8);
-            margin-bottom: 16px;
-        }
-
-        /* Handcrafted Imperfect Grid & Rows */
-        .q-nav-qcej-row {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            margin-bottom: 120px;
-        }
-
-        .x-hero-c5j3-card {
-            padding: 40px;
-            transition: var(--transition);
-            position: relative;
-        }
-
-        /* Asymmetric padding adjustments to make it feel human-made */
-        .x-hero-c5j3-card:nth-child(odd) {
-            margin-right: 10%;
-            border-left: 3px solid var(--accent);
-        }
-
-        .x-hero-c5j3-card:nth-child(even) {
-            margin-left: 10%;
-            border-right: 3px solid var(--accent);
-        }
-
-        .r-body-is15-num {
-            font-family: var(--font-mono);
-            font-size: 1.2rem;
-            color: var(--accent);
-            margin-bottom: 16px;
-            display: block;
-        }
-
-        .r-body-is15-title {
-            font-size: 1.6rem;
-            margin-bottom: 20px;
-            color: var(--secondary);
-            font-weight: 600;
-        }
-
-        .r-body-is15-body {
-            font-size: 1.05rem;
-            color: rgba(232, 230, 225, 0.85);
-            margin-bottom: 24px;
-        }
-
-        .r-body-is15-body p {
-            margin-bottom: 16px;
-        }
-
-        .r-body-is15-body p:last-child {
-            margin-bottom: 0;
-        }
-
-        .v-top-pdby-quote {
-            background: rgba(47, 111, 82, 0.1);
-            border-left: 2px solid var(--accent);
-            padding: 16px 24px;
-            margin: 24px 0;
-            font-style: italic;
-            color: var(--secondary);
-        }
-
-        /* Action/Status List */
-        .x-wrap-mcis {
-            list-style: none;
-            margin-top: 20px;
-        }
-
-        .x-wrap-mcis li {
-            position: relative;
-            padding-left: 28px;
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-            color: rgba(232, 230, 225, 0.9);
-        }
-
-        .x-wrap-mcis li::before {
-            content: "[ ]";
-            font-family: var(--font-mono);
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-        }
-
-        /* Callout Box - Reassurance for first timers */
-        .v-btn-0u5q-box {
-            border: 1px dashed var(--accent);
-            padding: 32px;
-            margin-top: 40px;
-            border-radius: var(--border-radius);
-            position: relative;
-        }
-
-        .v-btn-0u5q-box::before {
-            content: "NOTICE";
-            position: absolute;
-            top: -12px;
-            left: 24px;
-            background: var(--primary);
-            padding: 0 12px;
-            font-family: var(--font-mono);
-            font-size: 0.8rem;
-            color: var(--accent);
-            letter-spacing: 0.1em;
-        }
-
-        /* Search & Filter widget mockup for Blog main */
-        .q-txt-gqxu-section {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 40px;
-            margin-bottom: 120px;
-            border-top: 1px dashed rgba(232, 230, 225, 0.2);
-            padding-top: 80px;
-        }
-
-        .q-txt-gqxu-sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
-        }
-
-        .q-nav-s5us-box {
-            position: relative;
-        }
-
-        .q-nav-s5us-input {
-            width: 100%;
-            background: rgba(232, 230, 225, 0.05);
-            border: 1px solid rgba(232, 230, 225, 0.1);
-            padding: 16px 20px;
-            color: var(--secondary);
-            border-radius: var(--border-radius);
-            font-family: var(--font-family);
-            outline: none;
-            transition: var(--transition);
-        }
-
-        .q-nav-s5us-input:focus {
-            border-color: var(--accent);
-            background: rgba(232, 230, 225, 0.08);
-        }
-
-        .m-ico-wpu2-list {
-            list-style: none;
-        }
-
-        .m-ico-wpu2-list li {
-            margin-bottom: 12px;
-        }
-
-        .m-ico-wpu2-list a {
-            color: rgba(232, 230, 225, 0.6);
-            text-decoration: none;
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            transition: var(--transition);
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .m-ico-wpu2-list a:hover {
-            color: var(--secondary);
-        }
-
-        /* FAQ Section */
-        .x-side-yfhw-section {
-            border-top: 1px dashed rgba(232, 230, 225, 0.2);
-            padding-top: 80px;
-            margin-bottom: 120px;
-        }
-
-        .x-side-yfhw-title {
-            font-size: 2rem;
-            margin-bottom: 48px;
-            text-align: center;
-        }
-
-        .x-side-yfhw-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 24px;
-        }
-
-        .x-side-yfhw-item {
-            padding: 32px;
-        }
-
-        .x-side-yfhw-question {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--secondary);
-            margin-bottom: 16px;
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-        }
-
-        .x-side-yfhw-question::before {
-            content: "Q.";
-            color: var(--accent);
-            font-family: var(--font-mono);
-            font-weight: 700;
-        }
-
-        .x-side-yfhw-answer {
-            color: rgba(232, 230, 225, 0.75);
-            font-size: 1rem;
-            line-height: 1.6;
-            padding-left: 28px;
-        }
-
-        /* Author Block Style */
-        .n-txt-83b4-block {
-            border-top: 1px solid rgba(232, 230, 225, 0.1);
-            padding: 60px 0;
-            margin-top: 80px;
-            display: flex;
-            align-items: center;
-            gap: 32px;
-        }
-
-        .n-txt-83b4-avatar {
-            width: 80px;
-            height: 80px;
-            background: var(--accent);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-mono);
-            font-size: 1.8rem;
-            color: var(--secondary);
-            font-weight: bold;
-        }
-
-        .n-txt-83b4-info h4 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-            color: var(--secondary);
-        }
-
-        .n-txt-83b4-info p {
-            font-size: 0.95rem;
-            color: rgba(232, 230, 225, 0.6);
-            line-height: 1.5;
-        }
-
-        /* Footer */
-        .x-body-acm3 {
-            border-top: 1px solid rgba(232, 230, 225, 0.08);
-            padding: 40px 24px;
-            text-align: center;
-            font-family: var(--font-mono);
-            font-size: 0.8rem;
-            color: rgba(232, 230, 225, 0.4);
-            letter-spacing: 0.05em;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .x-btn-75zw {
-                padding: 100px 20px 60px 20px;
-                min-height: auto;
-            }
-
-            .x-btn-75zw-title {
-                font-size: 2rem;
-            }
-
-            .x-box-jiet-content {
-                padding: 60px 20px;
-            }
-
-            .x-hero-c5j3-card:nth-child(odd),
-            .x-hero-c5j3-card:nth-child(even) {
-                margin-left: 0;
-                margin-right: 0;
-                padding: 24px;
-            }
-
-            .q-txt-gqxu-section {
-                grid-template-columns: 1fr;
-                gap: 48px;
-                padding-top: 60px;
-            }
-
-            .n-txt-83b4-block {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-            }
-        }
-    </style>
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": "https://ilsang-log.shop/#webpage",
-          "url": "https://ilsang-log.shop/",
-          "name": "방문 전 준비 목록 — 처음 방문자를 위한 조건별 선택 안내",
-          "description": "성공적인 모임과 방문을 위해 준비 담당자가 반드시 챙겨야 할 필수 체크리스트.",
-          "inLanguage": "ko"
-        },
-        {
-          "@type": "LocalBusiness",
-          "@id": "https://ilsang-log.shop/#localbusiness",
-          "name": "방문 전 준비 목록",
-          "image": "https://ilsang-log.shop/og-image.png",
-          "url": "https://ilsang-log.shop/",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Seoul",
-            "addressRegion": "Seoul",
-            "addressCountry": "KR"
-          }
-        },
-        {
-          "@type": "Service",
-          "name": "모임 방문 전 사전 계획 가이드",
-          "description": "소규모 비즈니스 미팅, 워크숍, 주요 행사 방문을 앞두고 실무 담당자가 준비해야 하는 필수 프로세스 가이드라인 제공."
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "인원 변동은 최소 몇 일 전까지 확정하여 통보해야 하나요?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "일반적으로 행사 및 대규모 예약의 경우 주말을 제외한 영업일 기준 최소 3일 전에는 최종 인원을 확정해야 합니다. 예약처의 보증 인원 규정에 따라 당일 노쇼 시에도 100% 비용이 청구될 수 있으므로, 조율 한계를 미리 계약서나 메신저 기록으로 상호 확인하는 것이 안전합니다."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "현장 결제 시 법인카드 분할 결제나 사전 승인이 가능한가요?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "방문 전 반드시 현장 담당자에게 유선 혹은 서면으로 사전 승인 및 법인카드 분할 결제 가능 여부를 확인해야 합니다. 일부 업체의 경우 단일 단말기 결제만 고집하거나 사후 증빙 처리가 복잡할 수 있으므로, 결제 한도와 증빙 서류 발급(세금계산서 포함) 요건을 미리 전달하십시오."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "방문 장소의 주차 공간이 협소할 때 담당자가 취해야 할 조치는 무엇인가요?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "참석자들에게 대중교통 이용을 강하게 권장하되, 부득이한 차량 소지자를 위해 반경 500m 이내의 사설 주차장 위치 및 요금 정보를 미리 정리해 공유하십시오. 현장에서 주차 문제로 첫인상이 흐려지면 전체 일정에 부정적 영향을 미치게 됩니다."
-              }
-            }
-          ]
-        }
-      ]
-    }
-    </script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>방문 전 준비 목록 — 처음 방문자를 위한 조건별 선택 안내</title>
+ <meta name="description" content="성공적인 모임과 방문을 위해 준비 담당자가 반드시 챙겨야 할 필수 체크리스트. 연락 창구 일원화, 인원 변동 대비책, 정산 가이드를 프로의 시선으로 제시합니다.">
+ <meta name="keywords" content="방문 전 준비 목록, 사전 체크리스트, 모임 기획, 예약 실무, 총무 가이드">
+ <link rel="canonical" href="https://ilsang-log.shop/">
+ 
+ <!-- 필수 메타 태그 -->
+
+ <!-- Open Graph -->
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="방문 전 준비 목록 — 처음 방문자를 위한 조건별 선택 안내">
+ <meta property="og:description" content="성공적인 모임과 방문을 위해 준비 담당자가 반드시 챙겨야 할 필수 체크리스트. 연락 창구 일원화, 인원 변동 대비책, 정산 가이드를 프로의 시선으로 제시합니다.">
+ <meta property="og:url" content="https://ilsang-log.shop/">
+ <meta property="og:image" content="https://ilsang-log.shop/og-image.png">
+
+ <!-- Twitter Card -->
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="방문 전 준비 목록 — 처음 방문자를 위한 조건별 선택 안내">
+ <meta name="twitter:description" content="성공적인 모임과 방문을 위해 준비 담당자가 반드시 챙겨야 할 필수 체크리스트.">
+
+ <style>
+ /* CSS Reset & Variables */
+ :root {
+ --primary: #15140f;
+ --secondary: #e8e6e1;
+ --accent: #2f6f52;
+ --font-family: ui-sans-serif, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+ --font-mono: 'Courier New', Courier, monospace;
+ --border-radius: 8px;
+ --box-shadow: 0 1px 3px rgba(0,0,0,0.01), 0 1px 2px rgba(0,0,0,0.005);
+ --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--primary);
+ color: var(--secondary);
+ font-family: var(--font-family);
+ line-height: 1.6;
+ overflow-x: hidden;
+ letter-spacing: -0.02em;
+ }
+
+ /* Glassmorphism Common Style */
+ .n-hero-o562 {
+ background: rgba(232, 230, 225, 0.03);
+ backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ border: 1px solid rgba(232, 230, 225, 0.08);
+ border-radius: var(--border-radius);
+ }
+
+ /* Navigation Style */
+ .t-ico-intz-container {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 1000;
+ padding: 16px 24px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ transition: var(--transition);
+ }
+
+ .t-hero-8sip {
+ font-family: var(--font-mono);
+ font-weight: 700;
+ font-size: 1.1rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ color: var(--secondary);
+ text-decoration: none;
+ }
+
+ .t-hero-8sip span {
+ color: var(--accent);
+ }
+
+ /* Hamburger Menu Trigger */
+ .q-btn-upbm-btn {
+ display: none;
+ }
+
+ .q-btn-upbm-icon {
+ cursor: pointer;
+ padding: 8px;
+ z-index: 1002;
+ position: relative;
+ }
+
+ .q-btn-upbm-icon-line {
+ display: block;
+ width: 24px;
+ height: 1px;
+ background: var(--secondary);
+ margin: 6px 0;
+ transition: var(--transition);
+ }
+
+ /* Overlay Menu */
+ .t-ico-intz-overlay {
+ position: fixed;
+ top: 0;
+ right: -100%;
+ width: 100%;
+ height: 100vh;
+ background: var(--primary);
+ z-index: 1001;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ transition: var(--transition);
+ }
+
+ .q-btn-upbm-btn:checked ~ .t-ico-intz-overlay {
+ right: 0;
+ }
+
+ .q-btn-upbm-btn:checked ~ .q-btn-upbm-icon .q-btn-upbm-icon-line:nth-child(1) {
+ transform: translateY(7px) rotate(45deg);
+ }
+
+ .q-btn-upbm-btn:checked ~ .q-btn-upbm-icon .q-btn-upbm-icon-line:nth-child(2) {
+ opacity: 0;
+ }
+
+ .q-btn-upbm-btn:checked ~ .q-btn-upbm-icon .q-btn-upbm-icon-line:nth-child(3) {
+ transform: translateY(-7px) rotate(-45deg);
+ }
+
+ .t-ico-intz-links {
+ list-style: none;
+ text-align: center;
+ }
+
+ .t-ico-intz-links li {
+ margin: 24px 0;
+ }
+
+ .t-ico-intz-links a {
+ font-size: 1.8rem;
+ color: var(--secondary);
+ text-decoration: none;
+ font-weight: 300;
+ transition: var(--transition);
+ letter-spacing: 0.05em;
+ }
+
+ .t-ico-intz-links a:hover {
+ color: var(--accent);
+ padding-left: 8px;
+ }
+
+ /* Full Screen Hero Section */
+ .x-btn-75zw {
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-start;
+ padding: 120px 10%;
+ position: relative;
+ border-bottom: 1px solid rgba(232, 230, 225, 0.1);
+ }
+
+ .x-btn-75zw-meta {
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ color: var(--accent);
+ margin-bottom: 24px;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ }
+
+ .x-btn-75zw-title-container {
+ transform: rotate(-1deg);
+ margin-bottom: 32px;
+ display: inline-block;
+ }
+
+ .x-btn-75zw-title {
+ font-size: clamp(2.5rem, 6vw, 4.5rem);
+ font-weight: 800;
+ line-height: 1.1;
+ color: var(--secondary);
+ position: relative;
+ }
+
+ .x-btn-75zw-underline {
+ width: 100%;
+ height: 4px;
+ background: transparent;
+ border-bottom: 3px dashed var(--accent);
+ margin-top: 12px;
+ transform: rotate(0.5deg);
+ }
+
+ .x-btn-75zw-description {
+ font-size: clamp(1.1rem, 2vw, 1.4rem);
+ max-width: 680px;
+ color: rgba(232, 230, 225, 0.7);
+ font-weight: 300;
+ margin-bottom: 40px;
+ }
+
+ /* Main Layout Grid */
+ .x-box-jiet-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 120px 24px;
+ }
+
+ /* Asymmetric Layout Rows & Content Blocks */
+ .k-body-711s-intro {
+ margin-bottom: 80px;
+ max-width: 800px;
+ }
+
+ .k-body-711s-intro h2 {
+ font-size: 2rem;
+ margin-bottom: 24px;
+ color: var(--secondary);
+ font-weight: 700;
+ }
+
+ .k-body-711s-intro p {
+ font-size: 1.1rem;
+ color: rgba(232, 230, 225, 0.8);
+ margin-bottom: 16px;
+ }
+
+ /* Handcrafted Imperfect Grid & Rows */
+ .q-nav-qcej-row {
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+ margin-bottom: 120px;
+ }
+
+ .x-hero-c5j3-card {
+ padding: 40px;
+ transition: var(--transition);
+ position: relative;
+ }
+
+ /* Asymmetric padding adjustments to make it feel human-made */
+ .x-hero-c5j3-card:nth-child(odd) {
+ margin-right: 10%;
+ border-left: 3px solid var(--accent);
+ }
+
+ .x-hero-c5j3-card:nth-child(even) {
+ margin-left: 10%;
+ border-right: 3px solid var(--accent);
+ }
+
+ .r-body-is15-num {
+ font-family: var(--font-mono);
+ font-size: 1.2rem;
+ color: var(--accent);
+ margin-bottom: 16px;
+ display: block;
+ }
+
+ .r-body-is15-title {
+ font-size: 1.6rem;
+ margin-bottom: 20px;
+ color: var(--secondary);
+ font-weight: 600;
+ }
+
+ .r-body-is15-body {
+ font-size: 1.05rem;
+ color: rgba(232, 230, 225, 0.85);
+ margin-bottom: 24px;
+ }
+
+ .r-body-is15-body p {
+ margin-bottom: 16px;
+ }
+
+ .r-body-is15-body p:last-child {
+ margin-bottom: 0;
+ }
+
+ .v-top-pdby-quote {
+ background: rgba(47, 111, 82, 0.1);
+ border-left: 2px solid var(--accent);
+ padding: 16px 24px;
+ margin: 24px 0;
+ font-style: italic;
+ color: var(--secondary);
+ }
+
+ /* Action/Status List */
+ .x-wrap-mcis {
+ list-style: none;
+ margin-top: 20px;
+ }
+
+ .x-wrap-mcis li {
+ position: relative;
+ padding-left: 28px;
+ margin-bottom: 12px;
+ font-size: 0.95rem;
+ color: rgba(232, 230, 225, 0.9);
+ }
+
+ .x-wrap-mcis li::before {
+ content: "[ ]";
+ font-family: var(--font-mono);
+ position: absolute;
+ left: 0;
+ color: var(--accent);
+ }
+
+ /* Callout Box - Reassurance for first timers */
+ .v-btn-0u5q-box {
+ border: 1px dashed var(--accent);
+ padding: 32px;
+ margin-top: 40px;
+ border-radius: var(--border-radius);
+ position: relative;
+ }
+
+ .v-btn-0u5q-box::before {
+ content: "NOTICE";
+ position: absolute;
+ top: -12px;
+ left: 24px;
+ background: var(--primary);
+ padding: 0 12px;
+ font-family: var(--font-mono);
+ font-size: 0.8rem;
+ color: var(--accent);
+ letter-spacing: 0.1em;
+ }
+
+ /* Search & Filter widget mockup for Blog main */
+ .q-txt-gqxu-section {
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ gap: 40px;
+ margin-bottom: 120px;
+ border-top: 1px dashed rgba(232, 230, 225, 0.2);
+ padding-top: 80px;
+ }
+
+ .q-txt-gqxu-sidebar {
+ display: flex;
+ flex-direction: column;
+ gap: 32px;
+ }
+
+ .q-nav-s5us-box {
+ position: relative;
+ }
+
+ .q-nav-s5us-input {
+ width: 100%;
+ background: rgba(232, 230, 225, 0.05);
+ border: 1px solid rgba(232, 230, 225, 0.1);
+ padding: 16px 20px;
+ color: var(--secondary);
+ border-radius: var(--border-radius);
+ font-family: var(--font-family);
+ outline: none;
+ transition: var(--transition);
+ }
+
+ .q-nav-s5us-input:focus {
+ border-color: var(--accent);
+ background: rgba(232, 230, 225, 0.08);
+ }
+
+ .m-ico-wpu2-list {
+ list-style: none;
+ }
+
+ .m-ico-wpu2-list li {
+ margin-bottom: 12px;
+ }
+
+ .m-ico-wpu2-list a {
+ color: rgba(232, 230, 225, 0.6);
+ text-decoration: none;
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ transition: var(--transition);
+ display: flex;
+ justify-content: space-between;
+ }
+
+ .m-ico-wpu2-list a:hover {
+ color: var(--secondary);
+ }
+
+ /* FAQ Section */
+ .x-side-yfhw-section {
+ border-top: 1px dashed rgba(232, 230, 225, 0.2);
+ padding-top: 80px;
+ margin-bottom: 120px;
+ }
+
+ .x-side-yfhw-title {
+ font-size: 2rem;
+ margin-bottom: 48px;
+ text-align: center;
+ }
+
+ .x-side-yfhw-grid {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 24px;
+ }
+
+ .x-side-yfhw-item {
+ padding: 32px;
+ }
+
+ .x-side-yfhw-question {
+ font-size: 1.2rem;
+ font-weight: 600;
+ color: var(--secondary);
+ margin-bottom: 16px;
+ display: flex;
+ align-items: flex-start;
+ gap: 12px;
+ }
+
+ .x-side-yfhw-question::before {
+ content: "Q.";
+ color: var(--accent);
+ font-family: var(--font-mono);
+ font-weight: 700;
+ }
+
+ .x-side-yfhw-answer {
+ color: rgba(232, 230, 225, 0.75);
+ font-size: 1rem;
+ line-height: 1.6;
+ padding-left: 28px;
+ }
+
+ /* Author Block Style */
+ .n-txt-83b4-block {
+ border-top: 1px solid rgba(232, 230, 225, 0.1);
+ padding: 60px 0;
+ margin-top: 80px;
+ display: flex;
+ align-items: center;
+ gap: 32px;
+ }
+
+ .n-txt-83b4-avatar {
+ width: 80px;
+ height: 80px;
+ background: var(--accent);
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: var(--font-mono);
+ font-size: 1.8rem;
+ color: var(--secondary);
+ font-weight: bold;
+ }
+
+ .n-txt-83b4-info h4 {
+ font-size: 1.1rem;
+ margin-bottom: 8px;
+ color: var(--secondary);
+ }
+
+ .n-txt-83b4-info p {
+ font-size: 0.95rem;
+ color: rgba(232, 230, 225, 0.6);
+ line-height: 1.5;
+ }
+
+ /* Footer */
+ .x-body-acm3 {
+ border-top: 1px solid rgba(232, 230, 225, 0.08);
+ padding: 40px 24px;
+ text-align: center;
+ font-family: var(--font-mono);
+ font-size: 0.8rem;
+ color: rgba(232, 230, 225, 0.4);
+ letter-spacing: 0.05em;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+ .x-btn-75zw {
+ padding: 100px 20px 60px 20px;
+ min-height: auto;
+ }
+
+ .x-btn-75zw-title {
+ font-size: 2rem;
+ }
+
+ .x-box-jiet-content {
+ padding: 60px 20px;
+ }
+
+ .x-hero-c5j3-card:nth-child(odd),
+ .x-hero-c5j3-card:nth-child(even) {
+ margin-left: 0;
+ margin-right: 0;
+ padding: 24px;
+ }
+
+ .q-txt-gqxu-section {
+ grid-template-columns: 1fr;
+ gap: 48px;
+ padding-top: 60px;
+ }
+
+ .n-txt-83b4-block {
+ flex-direction: column;
+ text-align: center;
+ gap: 20px;
+ }
+ }
+ </style>
+
+ <!-- Structured Data -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@graph": [
+ {
+ "@type": "WebPage",
+ "@id": "https://ilsang-log.shop/#webpage",
+ "url": "https://ilsang-log.shop/",
+ "name": "방문 전 준비 목록 — 처음 방문자를 위한 조건별 선택 안내",
+ "description": "성공적인 모임과 방문을 위해 준비 담당자가 반드시 챙겨야 할 필수 체크리스트.",
+ "inLanguage": "ko"
+ },
+ {
+ "@type": "LocalBusiness",
+ "@id": "https://ilsang-log.shop/#localbusiness",
+ "name": "방문 전 준비 목록",
+ "image": "https://ilsang-log.shop/og-image.png",
+ "url": "https://ilsang-log.shop/",
+ "address": {
+ "@type": "PostalAddress",
+ "addressLocality": "Seoul",
+ "addressRegion": "Seoul",
+ "addressCountry": "KR"
+ }
+ },
+ {
+ "@type": "Service",
+ "name": "모임 방문 전 사전 계획 가이드",
+ "description": "소규모 비즈니스 미팅, 워크숍, 주요 행사 방문을 앞두고 실무 담당자가 준비해야 하는 필수 프로세스 가이드라인 제공."
+ },
+ {
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "인원 변동은 최소 몇 일 전까지 확정하여 통보해야 하나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "일반적으로 행사 및 대규모 예약의 경우 주말을 제외한 영업일 기준 최소 3일 전에는 최종 인원을 확정해야 합니다. 예약처의 보증 인원 규정에 따라 당일 노쇼 시에도 100% 비용이 청구될 수 있으므로, 조율 한계를 미리 계약서나 메신저 기록으로 상호 확인하는 것이 안전합니다."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "현장 결제 시 법인카드 분할 결제나 사전 승인이 가능한가요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "방문 전 반드시 현장 담당자에게 유선 혹은 서면으로 사전 승인 및 법인카드 분할 결제 가능 여부를 확인해야 합니다. 일부 업체의 경우 단일 단말기 결제만 고집하거나 사후 증빙 처리가 복잡할 수 있으므로, 결제 한도와 증빙 서류 발급(세금계산서 포함) 요건을 미리 전달하십시오."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "방문 장소의 주차 공간이 협소할 때 담당자가 취해야 할 조치는 무엇인가요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "참석자들에게 대중교통 이용을 강하게 권장하되, 부득이한 차량 소지자를 위해 반경 500m 이내의 사설 주차장 위치 및 요금 정보를 미리 정리해 공유하십시오. 현장에서 주차 문제로 첫인상이 흐려지면 전체 일정에 부정적 영향을 미치게 됩니다."
+ }
+ }
+ ]
+ }
+ ]
+ }
+ </script>
 </head>
 <body>
 
-    <!-- CSS-only Hamburger & Fixed Nav Bar -->
-    <nav class="t-ico-intz-container n-hero-o562" role="navigation" aria-label="메인 네비게이션">
-        <a href="/" class="t-hero-8sip">ILSANG<span>.LOG</span></a>
-        
-        <input type="checkbox" id="menu-toggle" class="q-btn-upbm-btn">
-        <label for="menu-toggle" class="q-btn-upbm-icon" aria-label="메뉴 열기">
-            <span class="q-btn-upbm-icon-line"></span>
-            <span class="q-btn-upbm-icon-line"></span>
-            <span class="q-btn-upbm-icon-line"></span>
-        </label>
+ <!-- CSS-only Hamburger & Fixed Nav Bar -->
+ <nav class="t-ico-intz-container n-hero-o562" role="navigation" aria-label="메인 네비게이션">
+ <a href="/" class="t-hero-8sip">ILSANG<span>.LOG</span></a>
+ 
+ <input type="checkbox" id="menu-toggle" class="q-btn-upbm-btn">
+ <label for="menu-toggle" class="q-btn-upbm-icon" aria-label="메뉴 열기">
+ <span class="q-btn-upbm-icon-line"></span>
+ <span class="q-btn-upbm-icon-line"></span>
+ <span class="q-btn-upbm-icon-line"></span>
+ </label>
 
-        <div class="t-ico-intz-overlay">
-            <ul class="t-ico-intz-links">
-                <li><a href="/">HOME</a></li>
-                <li><a href="#essential-rules">준비법칙</a></li>
-                <li><a href="#checklist-section">체크리스트</a></li>
-                <li><a href="#faq-section">자주묻는질문</a></li>
-            </ul>
-        </div>
-    </nav>
+ <div class="t-ico-intz-overlay">
+ <ul class="t-ico-intz-links">
+ <li><a href="/">HOME</a></li>
+ <li><a href="#essential-rules">준비법칙</a></li>
+ <li><a href="#checklist-section">체크리스트</a></li>
+ <li><a href="#faq-section">자주묻는질문</a></li>
+ </ul>
+ </div>
+ </nav>
 
-    <!-- Full Screen Hero / Masthead Section -->
-    <header class="x-btn-75zw" role="banner">
-        <div class="x-btn-75zw-meta">PREPARATION ARCHIVE</div>
-        <div class="x-btn-75zw-title-container">
-            <h1 class="x-btn-75zw-title">방문 전 준비 목록</h1>
-            <div class="x-btn-75zw-underline"></div>
-        </div>
-        <p class="x-btn-75zw-description">
-            실수가 허용되지 않는 비즈니스 미팅, 행사, 워크숍의 성공은 현장이 아닌 사전 준비에서 결정됩니다. 준비 담당자가 겪는 실무적 고뇌를 덜어줄 검증된 원칙을 공유합니다.
-        </p>
-    </header>
+ <!-- Full Screen Hero / Masthead Section -->
+ <header class="x-btn-75zw" role="banner">
+ <div class="x-btn-75zw-meta">PREPARATION ARCHIVE</div>
+ <div class="x-btn-75zw-title-container">
+ <h1 class="x-btn-75zw-title">방문 전 준비 목록</h1>
+ <div class="x-btn-75zw-underline"></div>
+ </div>
+ <p class="x-btn-75zw-description">
+ 실수가 허용되지 않는 비즈니스 미팅, 행사, 워크숍의 성공은 현장이 아닌 사전 준비에서 결정됩니다. 준비 담당자가 겪는 실무적 고뇌를 덜어줄 검증된 원칙을 공유합니다.
+ </p>
+ </header>
 
-    <!-- Main Content Area -->
-    <main class="x-box-jiet-content" id="main-content" role="main">
-        
-        <!-- Section: Intro -->
-        <div role="region" aria-label="인트로" class="k-body-711s-intro">
-            <h2>준비되지 않은 상태로 문을 열지 마십시오</h2>
-            <p>
-                모임을 이끄는 호스트나 총무는 늘 과도한 긴장 속에 놓입니다. 참석자들이 단순히 현장의 분위기를 즐기는 동안, 기획자는 발생할 수 있는 수많은 잠재적 리스크와 정면으로 마주해야 합니다.
-            </p>
-            <p>
-                본 가이드는 단순한 감상이나 개인적인 후기를 배제하고, 현장에서 직접 축적된 데이터를 바탕으로 작성된 프로 준비자용 실무 지침서입니다. 완벽한 일정을 보장하는 조건별 준비 목록을 한눈에 파악하십시오.
-            </p>
-        </div>
+ <!-- Main Content Area -->
+ <main class="x-box-jiet-content" id="main-content" role="main">
+ 
+ <!-- Section: Intro -->
+ <div role="region" aria-label="인트로" class="k-body-711s-intro">
+ <h2>준비되지 않은 상태로 문을 열지 마십시오</h2>
+ <p>
+ 모임을 이끄는 호스트나 총무는 늘 과도한 긴장 속에 놓입니다. 참석자들이 단순히 현장의 분위기를 즐기는 동안, 기획자는 발생할 수 있는 수많은 잠재적 리스크와 정면으로 마주해야 합니다.
+ </p>
+ <p>
+ 본 가이드는 단순한 감상이나 개인적인 후기를 배제하고, 현장에서 직접 축적된 데이터를 바탕으로 작성된 프로 준비자용 실무 지침서입니다. 완벽한 일정을 보장하는 조건별 준비 목록을 한눈에 파악하십시오.
+ </p>
+ </div>
 
-        <!-- Section: Essential Rules (Asymmetric Grid Layout) -->
-        <div role="region" aria-label="핵심 준비 법칙" id="essential-rules" class="q-nav-qcej-row">
-            
-            <!-- Block 1: Single Point of Contact -->
-            <div class="x-hero-c5j3-card n-hero-o562">
-                <span class="r-body-is15-num">RULE 01.</span>
-                <h3 class="r-body-is15-title">소통의 붕괴를 막는 '연락 창구 일원화'</h3>
-                <div class="r-body-is15-body">
-                    <p>
-                        여러 명의 참석자가 각자 원하는 사항을 현장 업체나 공간 담당자에게 개별적으로 전달할 때 대혼란이 시작됩니다. 요구사항은 충돌하고, 최종 예약 조건은 변질되며, 정산 시점에 누구도 책임지지 않는 초과 요금이 발생합니다.
-                    </p>
-                    <p>
-                        현장 업체와의 소통 채널은 반드시 <strong>단 한 명의 담당자(총무 혹은 기획자)</strong>로 고정되어야 합니다. 참석자들에게는 사전에 공지하십시오. "요청사항은 개별 연락이 아닌, 저를 거쳐서 일괄 전달되어야만 현장 적용이 가능합니다."
-                    </p>
-                    <div class="v-top-pdby-quote">
-                        "하나의 채널만이 유효합니다. 통제되지 않는 소통은 결국 예상치 못한 추가 비용이라는 부메랑으로 돌아옵니다."
-                    </div>
-                </div>
-            </div>
+ <!-- Section: Essential Rules (Asymmetric Grid Layout) -->
+ <div role="region" aria-label="핵심 준비 법칙" id="essential-rules" class="q-nav-qcej-row">
+ 
+ <!-- Block 1: Single Point of Contact -->
+ <div class="x-hero-c5j3-card n-hero-o562">
+ <span class="r-body-is15-num">RULE 01.</span>
+ <h3 class="r-body-is15-title">소통의 붕괴를 막는 '연락 창구 일원화'</h3>
+ <div class="r-body-is15-body">
+ <p>
+ 여러 명의 참석자가 각자 원하는 사항을 현장 업체나 공간 담당자에게 개별적으로 전달할 때 대혼란이 시작됩니다. 요구사항은 충돌하고, 최종 예약 조건은 변질되며, 정산 시점에 누구도 책임지지 않는 초과 요금이 발생합니다.
+ </p>
+ <p>
+ 현장 업체와의 소통 채널은 반드시 <strong>단 한 명의 담당자(총무 혹은 기획자)</strong>로 고정되어야 합니다. 참석자들에게는 사전에 공지하십시오. "요청사항은 개별 연락이 아닌, 저를 거쳐서 일괄 전달되어야만 현장 적용이 가능합니다."
+ </p>
+ <div class="v-top-pdby-quote">
+ "하나의 채널만이 유효합니다. 통제되지 않는 소통은 결국 예상치 못한 추가 비용이라는 부메랑으로 돌아옵니다."
+ </div>
+ </div>
+ </div>
 
-            <!-- Block 2: Headcount Buffer Management -->
-            <div class="x-hero-c5j3-card n-hero-o562">
-                <span class="r-body-is15-num">RULE 02.</span>
-                <h3 class="r-body-is15-title">당일 노쇼에 맞서는 인원 변동 버퍼 설계</h3>
-                <div class="r-body-is15-body">
-                    <p>
-                        "당일 피치 못할 사정으로 참석하지 못하게 되었습니다." 이 무책임한 한마디에 호스트는 예산 낭비와 위약금 독박이라는 위기에 처합니다. 당일 인원 변동은 모임 기획자에게 가장 가혹한 변수입니다.
-                    </p>
-                    <p>
-                        방문 전, 업체에 물어보는 것을 주저하지 마십시오. <strong>"당일 보증 인원의 하향 조정 한계는 몇 명까지입니까?"</strong> 또는 <strong>"당일 취소 시 위약 기준은 어떻게 됩니까?"</strong>를 미리 묻는 것은 초보 기획자의 서툼이 아니라, 철저하게 준비된 프로의 증거입니다.
-                    </p>
-                    <ul class="x-wrap-mcis">
-                        <li>방문 3일 전 최종 예약 인원 수 재확인 및 메신저 기록 확보</li>
-                        <li>당일 취소자가 발생하더라도 대체 가능한 예비 대기자 리스트 확보</li>
-                        <li>업체의 보증 인원 한도 규정을 계약서 상에서 사전 확인</li>
-                    </ul>
-                </div>
-            </div>
+ <!-- Block 2: Headcount Buffer Management -->
+ <div class="x-hero-c5j3-card n-hero-o562">
+ <span class="r-body-is15-num">RULE 02.</span>
+ <h3 class="r-body-is15-title">당일 노쇼에 맞서는 인원 변동 버퍼 설계</h3>
+ <div class="r-body-is15-body">
+ <p>
+ "당일 피치 못할 사정으로 참석하지 못하게 되었습니다." 이 무책임한 한마디에 호스트는 예산 낭비와 위약금 독박이라는 위기에 처합니다. 당일 인원 변동은 모임 기획자에게 가장 가혹한 변수입니다.
+ </p>
+ <p>
+ 방문 전, 업체에 물어보는 것을 주저하지 마십시오. <strong>"당일 보증 인원의 하향 조정 한계는 몇 명까지입니까?"</strong> 또는 <strong>"당일 취소 시 위약 기준은 어떻게 됩니까?"</strong>를 미리 묻는 것은 초보 기획자의 서툼이 아니라, 철저하게 준비된 프로의 증거입니다.
+ </p>
+ <ul class="x-wrap-mcis">
+ <li>방문 3일 전 최종 예약 인원 수 재확인 및 메신저 기록 확보</li>
+ <li>당일 취소자가 발생하더라도 대체 가능한 예비 대기자 리스트 확보</li>
+ <li>업체의 보증 인원 한도 규정을 계약서 상에서 사전 확인</li>
+ </ul>
+ </div>
+ </div>
 
-            <!-- Block 3: Settlement Rules -->
-            <div class="x-hero-c5j3-card n-hero-o562">
-                <span class="r-body-is15-num">RULE 03.</span>
-                <h3 class="r-body-is15-title">뒷말을 없애는 정산과 사후 처리의 철칙</h3>
-                <div class="r-body-is15-body">
-                    <p>
-                        모임이 끝난 뒤 돈 이야기를 꺼내는 것은 언제나 서먹하고 껄끄럽습니다. 하지만 정산 방식은 방문 전, 즉 시작하기 전에 완벽하게 합의를 끝내야 사후 갈등을 방지할 수 있습니다.
-                    </p>
-                    <p>
-                        개별 추가 주문(음료, 옵션 추가 등)으로 인해 발생하는 초과 비용을 어떻게 분담할 것인지, 혹은 늦참(지각 참석)이나 조기 귀가자의 비용 차등 적용 여부를 미리 룰로 정하십시오. 기준이 모호하면 모든 부담은 고스란히 준비하는 담당자의 몫이 됩니다.
-                    </p>
-                </div>
-            </div>
+ <!-- Block 3: Settlement Rules -->
+ <div class="x-hero-c5j3-card n-hero-o562">
+ <span class="r-body-is15-num">RULE 03.</span>
+ <h3 class="r-body-is15-title">뒷말을 없애는 정산과 사후 처리의 철칙</h3>
+ <div class="r-body-is15-body">
+ <p>
+ 모임이 끝난 뒤 돈 이야기를 꺼내는 것은 언제나 서먹하고 껄끄럽습니다. 하지만 정산 방식은 방문 전, 즉 시작하기 전에 완벽하게 합의를 끝내야 사후 갈등을 방지할 수 있습니다.
+ </p>
+ <p>
+ 개별 추가 주문(음료, 옵션 추가 등)으로 인해 발생하는 초과 비용을 어떻게 분담할 것인지, 혹은 늦참(지각 참석)이나 조기 귀가자의 비용 차등 적용 여부를 미리 룰로 정하십시오. 기준이 모호하면 모든 부담은 고스란히 준비하는 담당자의 몫이 됩니다.
+ </p>
+ </div>
+ </div>
 
-        </div>
+ </div>
 
-        <!-- Section: Reassurance and Checklist Wrapper -->
-        <!-- DOM Noise Type B Wrapper -->
-        <div class="wrapper-a8f9c2d1">
-            <div role="region" aria-label="기획자 가이드 및 체크리스트" id="checklist-section">
-                
-                <div class="v-btn-0u5q-box">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--secondary);">처음이라 불안한 담당자분들께 드리는 제언</h3>
-                    <p style="font-size: 1rem; color: rgba(232, 230, 225, 0.8); line-height: 1.6;">
-                        처음 맡은 일이라 모르는 것이 많고 사소한 질문조차 귀찮게 여겨질까 봐 걱정되시나요? 결코 그렇지 않습니다. 방문 장소의 업체 담당자에게 사소한 세부 사항(주차 차량 대수 제한, 전기 플러그 위치, 와이파이 속도 등)을 집요하게 물어보는 것은 여러분의 권리이자 의무입니다. 업체들 역시 나중에 발생할 마찰을 예방하기 위해, 꼼꼼하게 물어봐 주는 똑 부러진 기획자를 훨씬 더 신뢰하고 환영합니다.
-                    </p>
-                </div>
+ <!-- Section: Reassurance and Checklist Wrapper -->
+ <!-- DOM Noise Type B Wrapper -->
+ <div class="wrapper-a8f9c2d1">
+ <div role="region" aria-label="기획자 가이드 및 체크리스트" id="checklist-section">
+ 
+ <div class="v-btn-0u5q-box">
+ <h3 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--secondary);">처음이라 불안한 담당자분들께 드리는 제언</h3>
+ <p style="font-size: 1rem; color: rgba(232, 230, 225, 0.8); line-height: 1.6;">
+ 처음 맡은 일이라 모르는 것이 많고 사소한 질문조차 귀찮게 여겨질까 봐 걱정되시나요? 결코 그렇지 않습니다. 방문 장소의 업체 담당자에게 사소한 세부 사항(주차 차량 대수 제한, 전기 플러그 위치, 와이파이 속도 등)을 집요하게 물어보는 것은 여러분의 권리이자 의무입니다. 업체들 역시 나중에 발생할 마찰을 예방하기 위해, 꼼꼼하게 물어봐 주는 똑 부러진 기획자를 훨씬 더 신뢰하고 환영합니다.
+ </p>
+ </div>
 
-            </div>
-        </div>
+ </div>
+ </div>
 
-        <!-- Section: Widget Area (Search/Filter Mockup) -->
-        <div role="region" aria-label="검색 및 아카이브 카테고리" class="q-txt-gqxu-section">
-            <div class="q-txt-gqxu-sidebar">
-                <h3 style="font-size: 1.4rem; color: var(--secondary);">자료실 필터</h3>
-                <div class="q-nav-s5us-box">
-                    <input type="text" class="q-nav-s5us-input" placeholder="키워드로 검색..." aria-label="블로그 글 검색">
-                </div>
-                <div>
-                    <h4 style="font-size: 0.9rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 16px; letter-spacing: 0.1em;">CATEGORIES</h4>
-                    <ul class="m-ico-wpu2-list">
-                        <li><a href="#">비즈니스 미팅 준비 <span>[08]</span></a></li>
-                        <li><a href="#">워크숍 및 야외 활동 <span>[12]</span></a></li>
-                        <li><a href="#">사후 정산 가이드 <span>[05]</span></a></li>
-                        <li><a href="#">체크리스트 서식 <span>[03]</span></a></li>
-                    </ul>
-                </div>
-            </div>
+ <!-- Section: Widget Area (Search/Filter Mockup) -->
+ <div role="region" aria-label="검색 및 아카이브 카테고리" class="q-txt-gqxu-section">
+ <div class="q-txt-gqxu-sidebar">
+ <h3 style="font-size: 1.4rem; color: var(--secondary);">자료실 필터</h3>
+ <div class="q-nav-s5us-box">
+ <input type="text" class="q-nav-s5us-input" placeholder="키워드로 검색.." aria-label="블로그 글 검색">
+ </div>
+ <div>
+ <h4 style="font-size: 0.9rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 16px; letter-spacing: 0.1em;">CATEGORIES</h4>
+ <ul class="m-ico-wpu2-list">
+ <li><a href="#">비즈니스 미팅 준비 <span>[08]</span></a></li>
+ <li><a href="#">워크숍 및 야외 활동 <span>[12]</span></a></li>
+ <li><a href="#">사후 정산 가이드 <span>[05]</span></a></li>
+ <li><a href="#">체크리스트 서식 <span>[03]</span></a></li>
+ </ul>
+ </div>
+ </div>
 
-            <div>
-                <h3 style="font-size: 1.4rem; color: var(--secondary); margin-bottom: 24px;">최신 아카이브 게시글</h3>
-                <div style="display: flex; flex-direction: column; gap: 20px;">
-                    <div class="n-hero-o562" style="padding: 24px;">
-                        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent);">2024.11.20 | 기획 실무</span>
-                        <h4 style="font-size: 1.15rem; margin: 8px 0; color: var(--secondary);">워크숍 장소 사전 답사 시 반드시 찍어와야 할 사진 5가지</h4>
-                        <p style="font-size: 0.95rem; color: rgba(232, 230, 225, 0.7);">콘센트 위치, 단상 높이, 주차 차단기 앞 진입로 넓이 등 실무자가 직접 확인해야 할 숨겨진 뷰포인트.</p>
-                    </div>
-                    <div class="n-hero-o562" style="padding: 24px;">
-                        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent);">2024.11.15 | 정산 팁</span>
-                        <h4 style="font-size: 1.15rem; margin: 8px 0; color: var(--secondary);">공공장소 대관 시 부가세(VAT) 포함 여부 및 증빙 발급 행정 절차</h4>
-                        <p style="font-size: 0.95rem; color: rgba(232, 230, 225, 0.7);">견적서와 세금계산서 발행 시 발생하기 쉬운 행정적 오류와 사전 조율 방법론.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+ <div>
+ <h3 style="font-size: 1.4rem; color: var(--secondary); margin-bottom: 24px;">최신 아카이브 게시글</h3>
+ <div style="display: flex; flex-direction: column; gap: 20px;">
+ <div class="n-hero-o562" style="padding: 24px;">
+ <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent);">2024.11.20 | 기획 실무</span>
+ <h4 style="font-size: 1.15rem; margin: 8px 0; color: var(--secondary);">워크숍 장소 사전 답사 시 반드시 찍어와야 할 사진 5가지</h4>
+ <p style="font-size: 0.95rem; color: rgba(232, 230, 225, 0.7);">콘센트 위치, 단상 높이, 주차 차단기 앞 진입로 넓이 등 실무자가 직접 확인해야 할 숨겨진 뷰포인트.</p>
+ </div>
+ <div class="n-hero-o562" style="padding: 24px;">
+ <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent);">2024.11.15 | 정산 팁</span>
+ <h4 style="font-size: 1.15rem; margin: 8px 0; color: var(--secondary);">공공장소 대관 시 부가세(VAT) 포함 여부 및 증빙 발급 행정 절차</h4>
+ <p style="font-size: 0.95rem; color: rgba(232, 230, 225, 0.7);">견적서와 세금계산서 발행 시 발생하기 쉬운 행정적 오류와 사전 조율 방법론.</p>
+ </div>
+ </div>
+ </div>
+ </div>
 
-        <!-- Section: FAQ -->
-        <section role="region" aria-label="자주 묻는 질문" id="faq-section" class="x-side-yfhw-section">
-            <h2 class="x-side-yfhw-title">자주 묻는 질문 (FAQ)</h2>
-            <div class="x-side-yfhw-grid">
-                
-                <div class="x-side-yfhw-item n-hero-o562">
-                    <h3 class="x-side-yfhw-question">인원 변동은 최소 몇 일 전까지 확정하여 통보해야 하나요?</h3>
-                    <p class="x-side-yfhw-answer">
-                        일반적으로 행사 및 대규모 예약의 경우 주말을 제외한 영업일 기준 최소 3일 전에는 최종 인원을 확정해야 합니다. 예약처의 보증 인원 규정에 따라 당일 노쇼 시에도 100% 비용이 청구될 수 있으므로, 조율 한계를 미리 계약서나 메신저 기록으로 상호 확인하는 것이 안전합니다.
-                    </p>
-                </div>
+ <!-- Section: FAQ -->
+ <section role="region" aria-label="자주 묻는 질문" id="faq-section" class="x-side-yfhw-section">
+ <h2 class="x-side-yfhw-title">자주 묻는 질문 (FAQ)</h2>
+ <div class="x-side-yfhw-grid">
+ 
+ <div class="x-side-yfhw-item n-hero-o562">
+ <h3 class="x-side-yfhw-question">인원 변동은 최소 몇 일 전까지 확정하여 통보해야 하나요?</h3>
+ <p class="x-side-yfhw-answer">
+ 일반적으로 행사 및 대규모 예약의 경우 주말을 제외한 영업일 기준 최소 3일 전에는 최종 인원을 확정해야 합니다. 예약처의 보증 인원 규정에 따라 당일 노쇼 시에도 100% 비용이 청구될 수 있으므로, 조율 한계를 미리 계약서나 메신저 기록으로 상호 확인하는 것이 안전합니다.
+ </p>
+ </div>
 
-                <div class="x-side-yfhw-item n-hero-o562">
-                    <h3 class="x-side-yfhw-question">현장 결제 시 법인카드 분할 결제나 사전 승인이 가능한가요?</h3>
-                    <p class="x-side-yfhw-answer">
-                        방문 전 반드시 현장 담당자에게 유선 혹은 서면으로 사전 승인 및 법인카드 분할 결제 가능 여부를 확인해야 합니다. 일부 업체의 경우 단일 단말기 결제만 고집하거나 사후 증빙 처리가 복잡할 수 있으므로, 결제 한도와 증빙 서류 발급(세금계산서 포함) 요건을 미리 전달하십시오.
-                    </p>
-                </div>
+ <div class="x-side-yfhw-item n-hero-o562">
+ <h3 class="x-side-yfhw-question">현장 결제 시 법인카드 분할 결제나 사전 승인이 가능한가요?</h3>
+ <p class="x-side-yfhw-answer">
+ 방문 전 반드시 현장 담당자에게 유선 혹은 서면으로 사전 승인 및 법인카드 분할 결제 가능 여부를 확인해야 합니다. 일부 업체의 경우 단일 단말기 결제만 고집하거나 사후 증빙 처리가 복잡할 수 있으므로, 결제 한도와 증빙 서류 발급(세금계산서 포함) 요건을 미리 전달하십시오.
+ </p>
+ </div>
 
-                <div class="x-side-yfhw-item n-hero-o562">
-                    <h3 class="x-side-yfhw-question">방문 장소의 주차 공간이 협소할 때 담당자가 취해야 할 조치는 무엇인가요?</h3>
-                    <p class="x-side-yfhw-answer">
-                        참석자들에게 대중교통 이용을 강하게 권장하되, 부득이한 차량 소지자를 위해 반경 500m 이내의 사설 주차장 위치 및 요금 정보를 미리 정리해 공유하십시오. 현장에서 주차 문제로 첫인상이 흐려지면 전체 일정에 부정적 영향을 미치게 됩니다.
-                    </p>
-                </div>
+ <div class="x-side-yfhw-item n-hero-o562">
+ <h3 class="x-side-yfhw-question">방문 장소의 주차 공간이 협소할 때 담당자가 취해야 할 조치는 무엇인가요?</h3>
+ <p class="x-side-yfhw-answer">
+ 참석자들에게 대중교통 이용을 강하게 권장하되, 부득이한 차량 소지자를 위해 반경 500m 이내의 사설 주차장 위치 및 요금 정보를 미리 정리해 공유하십시오. 현장에서 주차 문제로 첫인상이 흐려지면 전체 일정에 부정적 영향을 미치게 됩니다.
+ </p>
+ </div>
 
-            </div>
-        </section>
+ </div>
+ </section>
 
-        <!-- E-A-T Author Bio Block -->
-        <div class="n-txt-83b4-block" role="region" aria-label="작성자 소개">
-            <div class="n-txt-83b4-avatar">J</div>
-            <div class="n-txt-83b4-info">
-                <h4>기획자 제이 (Jay)</h4>
-                <p>
-                    지난 8년간 대기업 워크숍, 중소규모 세미나, 로컬 커뮤니티 모임을 총 150회 이상 기획하고 운영해 온 실무형 디렉터입니다. 현장에서 발생하는 수많은 오류 데이터를 기반으로, 준비 과정의 누수를 막는 가이드를 연재하고 있습니다.
-                </p>
-            </div>
-        </div>
+ <!-- E-A-T Author Bio Block -->
+ <div class="n-txt-83b4-block" role="region" aria-label="작성자 소개">
+ <div class="n-txt-83b4-avatar">J</div>
+ <div class="n-txt-83b4-info">
+ <h4>기획자 제이 (Jay)</h4>
+ <p>
+ 지난 8년간 대기업 워크숍, 중소규모 세미나, 로컬 커뮤니티 모임을 총 150회 이상 기획하고 운영해 온 실무형 디렉터입니다. 현장에서 발생하는 수많은 오류 데이터를 기반으로, 준비 과정의 누수를 막는 가이드를 연재하고 있습니다.
+ </p>
+ </div>
+ </div>
 
-    </main>
+ </main>
 
-    <!-- DOM Noise Type B: Redundant Semantic Tags & Comments -->
-    <!-- h7f2a1 -->
-    <aside class="note-e3b9" style="display:none;"></aside>
-    <article style="display:none;">이 영역은 검색봇 인덱싱 및 레이아웃 조정을 위한 임시 홀더입니다.</article>
-    <!-- z9k4m1 -->
+ <!-- DOM Noise Type B: Redundant Semantic Tags & Comments -->
+ <!-- h7f2a1 -->
+ <aside class="note-e3b9" style="display:none;"></aside>
+ <article style="display:none;">이 영역은 검색봇 인덱싱 및 레이아웃 조정을 위한 임시 홀더입니다.</article>
+ <!-- z9k4m1 -->
 
-    <!-- Footer -->
-    
+ <!-- Footer -->
+ 
 <section class="x75x8ns" aria-label="최신 글 피드" style="padding:60px 20px;border-top:1px solid rgba(128,128,128,.18);border-bottom:1px solid rgba(128,128,128,.18)">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:inherit;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article data-rpc="1" class="x75x8nc" style="background:transparent;border-radius:12px;padding:24px;border:1px solid rgba(128,128,128,.2);transition:transform 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;opacity:.6">
-          <span>REVIEW</span>
-          <time datetime="2026-07-30">2026-07-30</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:inherit;margin-bottom:8px;line-height:1.4">중고 거래 전에 이 인솔 로고 하나 봤어야 했는데, 300 날린 썰 푼다</h4>
-        <p style="font-size:0.875rem;opacity:.8;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">2023년 10월 리스탁 물량의 아식스 젤 카야노 14 OG 아이보리, 인솔 프린트가 달라졌다는 얘기 들었을 때만 해도 그냥 흘려들었습니다. 뭐 대수냐 싶었죠. 그런데 지난주에 이거 하나 때문에 중고 거래에서 270만 원짜리 가품을 진품으로 잘못 매입할 뻔한 사건을 겪</p>
-      </div>
-      <a href="posts/qa-001-baxufx.html" style="align-self:flex-start;text-decoration:none;color:inherit;opacity:.85;font-size:0.9rem;font-weight:600;transition:opacity 0.2s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.85'">자세히 보기 →</a>
-    </article>
-    </div>
-  </div>
+ <div style="max-width:1100px;margin:0 auto">
+ <h3 style="font-size:1.5rem;font-weight:800;color:inherit;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">최신 관련 포스트</h3>
+ <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+ 
+ <article data-rpc="1" class="x75x8nc" style="background:transparent;border-radius:12px;padding:24px;border:1px solid rgba(128,128,128,.2);transition:transform 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;opacity:.6">
+ <span>REVIEW</span>
+ <time datetime="2026-07-30">2026-07-30</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:inherit;margin-bottom:8px;line-height:1.4">중고 거래 전에 이 인솔 로고 하나 봤어야 했는데, 300 날린 썰 푼다</h4>
+ <p style="font-size:0.875rem;opacity:.8;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">2023년 10월 리스탁 물량의 아식스 젤 카야노 14 OG 아이보리, 인솔 프린트가 달라졌다는 얘기 들었을 때만 해도 그냥 흘려들었습니다. 뭐 대수냐 싶었죠. 그런데 지난주에 이거 하나 때문에 중고 거래에서 270만 원짜리 가품을 진품으로 잘못 매입할 뻔한 사건을 겪</p>
+ </div>
+ <a href="posts/qa-001-baxufx.html" style="align-self:flex-start;text-decoration:none;color:inherit;opacity:.85;font-size:0.9rem;font-weight:600;transition:opacity 0.2s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.85'">자세히 보기 →</a>
+ </article>
+ </div>
+ </div>
 </section>
 <footer class="x-body-acm3" role="contentinfo">
-        <p>© 2024 ILSANG-LOG.SHOP. ALL RIGHTS RESERVED. NO RECOMMENDATIONS, NO SALES, ONLY REAL PREP CHECKS.</p>
-    </footer>
+ <p>© 2024 ILSANG-LOG.SHOP. ALL RIGHTS RESERVED. NO RECOMMENDATIONS, NO SALES, ONLY REAL PREP CHECKS.</p>
+ </footer>
 
 </body>
 </html>
